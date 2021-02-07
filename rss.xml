@@ -1,22 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[keensyo's blog]]></title><description><![CDATA[keensyo's blog]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 26 Jan 2021 11:31:45 GMT</lastBuildDate><item><title><![CDATA[最近やっていること]]></title><description><![CDATA[COVID-19の影響、というわけではないのだけれど、生活習慣を変えている。
-夜は遅くとも24時前に就寝し、朝は6時30分を目安に起床。
-早起きをするほうが自由に使える時間が多い気がして、満足度は高い。 で、早起きして何をしているかというと、Ruby…]]></description><link>null/recent-routine/</link><guid isPermaLink="false">null/recent-routine/</guid><pubDate>Tue, 26 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;COVID-19の影響、というわけではないのだけれど、生活習慣を変えている。&lt;/br&gt;
-夜は遅くとも24時前に就寝し、朝は6時30分を目安に起床。&lt;/br&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[keensyo's blog]]></title><description><![CDATA[@keensyoのブログです。]]></description><link>https://keensyo.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 07 Feb 2021 14:19:26 GMT</lastBuildDate><item><title><![CDATA[どこかに行きたい]]></title><description><![CDATA[1 年以上旅行に行っていない。
+社会人になってから、定期的にどこかに行っていた。多分に現実逃避だったのだけれど、ほどよい休息になっていた。
+マイルを貯めて海外旅行に行くぞ！と息巻いて作った ANA…]]></description><link>https://keensyo.github.io/about-traveling/</link><guid isPermaLink="false">https://keensyo.github.io/about-traveling/</guid><pubDate>Sat, 06 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;1 年以上旅行に行っていない。&lt;/br&gt;
+社会人になってから、定期的にどこかに行っていた。多分に現実逃避だったのだけれど、ほどよい休息になっていた。&lt;/br&gt;
+マイルを貯めて海外旅行に行くぞ！と息巻いて作った ANA クレジットカードは、マイル有効期限を目の前にし無念の楽天ポイント変換を余儀なくされた&lt;/br&gt;
+2 巻まで読んでいた「深夜特急」の 3 巻を買い、いまの生活とあまりに違いすぎて SF 小説を読んでいるようだった。&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;自粛は形骸化し、マスクが免罪符になり外から覗く限りは飲み屋にも人は戻りつつある。&lt;/br&gt;
+それでも世の中はだいぶ変わったと思う。少なくとも自分の意識は変わった。&lt;/br&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;人に会う口実が無くなり、ほぼ会うことはなくなった&lt;/li&gt;
+&lt;li&gt;外に遊びに行きたいが、混雑しているところにはより行きたくなくなった&lt;/li&gt;
+&lt;li&gt;物欲が更になくなった&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ずっとこれが続くと、何も残らない感じがして、物理的にどこかに行くことは難しいかもしれないけど&lt;/br&gt;
+どこかに行きたい気持ちだけは無くしたくないと思う。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ブログに手を加えようとしている話]]></title><description><![CDATA[ここ一週間ぐらいこのブログをいい感じにしようとチクチク修正していた。
+結果としてうまくいっていなくて、この投稿をした段階では一週間前となんら変わっていないことになる。 具体的に何をやっていたかというと、各記事にタグをつけようとしていた。
+Gatsby…]]></description><link>https://keensyo.github.io/try-to-change-blog/</link><guid isPermaLink="false">https://keensyo.github.io/try-to-change-blog/</guid><pubDate>Wed, 03 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ここ一週間ぐらいこのブログをいい感じにしようとチクチク修正していた。&lt;/br&gt;
+結果としてうまくいっていなくて、この投稿をした段階では一週間前となんら変わっていないことになる。&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;具体的に何をやっていたかというと、各記事にタグをつけようとしていた。&lt;/br&gt;
+Gatsby はドキュメントが手厚い。ググれば同じことをやっている人が知見をまとめてくれている。&lt;/br&gt;
+これは苦労せずできるだろうと、タカをくくっていたら全然うまくいかなかった。&lt;/br&gt;
+定義しているはずの[result]という変数をうまく参照できていないとか、やっとこ動いたと思ったらなぜか各ページへのルーティングができなくなり 404 で返ってくるなど。&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;理由は明白で、ろくに勉強せず雰囲気で JavaScript（GraphQL,Gatsby）を使っていること。&lt;/br&gt;
+あるいは各種ドキュメントの読み込みが足りない or できていないことだと思っている。&lt;/br&gt;
+他にやりたいこともあるけれど、どのみち JavaScript は使うことになるので腰を据えて勉強したほうがいいのだと思う。&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;顛末がすごいダサくて、書き留めておきたくないけど置いておく。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[最近やっていること]]></title><description><![CDATA[COVID-19 の影響、というわけではないのだけれど、生活習慣を変えている。
+夜は遅くとも 24 時前に就寝し、朝は 6 時 30 分を目安に起床。
+早起きをするほうが自由に使える時間が多い気がして、満足度は高い。 で、早起きして何をしているかというと、Ruby…]]></description><link>https://keensyo.github.io/recent-routine/</link><guid isPermaLink="false">https://keensyo.github.io/recent-routine/</guid><pubDate>Tue, 26 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;COVID-19 の影響、というわけではないのだけれど、生活習慣を変えている。&lt;/br&gt;
+夜は遅くとも 24 時前に就寝し、朝は 6 時 30 分を目安に起床。&lt;/br&gt;
 早起きをするほうが自由に使える時間が多い気がして、満足度は高い。&lt;/br&gt;&lt;/p&gt;
-&lt;p&gt;で、早起きして何をしているかというと、Rubyを触っている。&lt;/br&gt;
+&lt;p&gt;で、早起きして何をしているかというと、Ruby を触っている。&lt;/br&gt;
 何年「入門」しているんだという話になるぐらい、何度もトライしている。&lt;/br&gt;
 一時期に比べるとだいぶ理解できるようになったと思うけど、手足のように使えるわけじゃない。&lt;/br&gt;
-仕事と絡められると上達するんだと思うけど、いまの環境だとコードを書くことを求められないうえにRubyを使っていない。残念。&lt;/br&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://amzn.to/2KNZMxv&quot;&gt;プロを目指す人のためのRuby入門&lt;/a&gt;を使っていて、最近は&lt;a href=&quot;https://github.com/ruby/typeprof&quot;&gt;Typeprof&lt;/a&gt;を写経している。&lt;/br&gt;
-Typeprofは型チェックをできる、というのが単純におもしろいなと思って選んだ。動的型付け言語が型解析をするために、どんなトライをしているのかをクックパッドブログで読んだことも影響している。コードは今の自分には書いてあることが難しくて、題材として適切だったのか…？遠い目になる。&lt;/br&gt;&lt;/p&gt;
+仕事と絡められると上達するんだと思うけど、いまの環境だとコードを書くことを求められないうえに Ruby を使っていない。残念。&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://amzn.to/2KNZMxv&quot;&gt;プロを目指す人のための Ruby 入門&lt;/a&gt;を使っていて、最近は&lt;a href=&quot;https://github.com/ruby/typeprof&quot;&gt;Typeprof&lt;/a&gt;を写経している。&lt;/br&gt;
+Typeprof は型チェックをできる、というのが単純におもしろいなと思って選んだ。動的型付け言語が型解析をするために、どんなトライをしているのかをクックパッドブログで読んだことも影響している。コードは今の自分には書いてあることが難しくて、題材として適切だったのか…？遠い目になる。&lt;/br&gt;&lt;/p&gt;
 &lt;p&gt;一方で、運動は全くやっていない。&lt;/br&gt;
-とくに2回目の非常事態宣言が出たことで、平日はもちろん、休日すら外に出ることがかなり減った。&lt;/br&gt;
+とくに 2 回目の非常事態宣言が出たことで、平日はもちろん、休日すら外に出ることがかなり減った。&lt;/br&gt;
 早起きしているので散歩ぐらいはできるはずだけど、散歩するのであれば勉強したい気持ちが強い（あと寒い）。&lt;/br&gt;
 散歩したくなったらすればいいか、ぐらいに捉えている。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Github PagesとGatsbyJSでブログをつくった]]></title><description><![CDATA[なにかつくりたいなとぼんやり考え、ブログがちょうどよさそうだと思いつくりました。
-つくった背景は、シンプルなブログがほしいのと各サービスに散らばる情報をひとつにまとめたいと思ったためです。 構成はタイトルの通りで、Github PagesでホスティングしGatsbyJS…]]></description><link>null/createblog/</link><guid isPermaLink="false">null/createblog/</guid><pubDate>Sun, 24 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;なにかつくりたいなとぼんやり考え、ブログがちょうどよさそうだと思いつくりました。&lt;/br&gt;
+つくった背景は、シンプルなブログがほしいのと各サービスに散らばる情報をひとつにまとめたいと思ったためです。 構成はタイトルの通りで、Github Pages でホスティングし GatsbyJS…]]></description><link>https://keensyo.github.io/createblog/</link><guid isPermaLink="false">https://keensyo.github.io/createblog/</guid><pubDate>Sun, 24 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;なにかつくりたいなとぼんやり考え、ブログがちょうどよさそうだと思いつくりました。&lt;/br&gt;
 つくった背景は、シンプルなブログがほしいのと各サービスに散らばる情報をひとつにまとめたいと思ったためです。&lt;/br&gt;&lt;/p&gt;
-&lt;p&gt;構成はタイトルの通りで、Github PagesでホスティングしGatsbyJSでデザイン諸々を組んでいます。&lt;/br&gt;
-いずれも公式ドキュメントを参照しながらつくりましたが、そもそもJavaScriptがおぼつかないので、いまのところほとんど手を加えていません。&lt;/br&gt;
-GatsbyJSはstarterというフレームワークのようなものがあり、今回利用したのは&lt;a href=&quot;https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-blog&quot;&gt;gatsby-starter-blog&lt;/a&gt;です。&lt;/br&gt;
-Markdownを書いたらnpm run deployでデプロイする感じです。&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;構成はタイトルの通りで、Github Pages でホスティングし GatsbyJS でデザイン諸々を組んでいます。&lt;/br&gt;
+いずれも公式ドキュメントを参照しながらつくりましたが、そもそも JavaScript がおぼつかないので、いまのところほとんど手を加えていません。&lt;/br&gt;
+GatsbyJS は starter というフレームワークのようなものがあり、今回利用したのは&lt;a href=&quot;https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-blog&quot;&gt;gatsby-starter-blog&lt;/a&gt;です。&lt;/br&gt;
+Markdown を書いたら npm run deploy でデプロイする感じです。&lt;/br&gt;&lt;/p&gt;
 &lt;p&gt;まだ全然やりきれていないので、もう少し手を加えたらなにをしたか書こうと思います。&lt;/p&gt;</content:encoded></item></channel></rss>
