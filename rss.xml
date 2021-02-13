@@ -1,4 +1,68 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[keensyo's blog]]></title><description><![CDATA[@keensyoのブログです。]]></description><link>https://keensyo.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 10 Feb 2021 00:35:11 GMT</lastBuildDate><item><title><![CDATA[どこかに行きたい]]></title><description><![CDATA[1 年以上旅行に行っていない。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[keensyo's blog]]></title><description><![CDATA[@keensyoのブログです。]]></description><link>https://keensyo.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 13 Feb 2021 07:37:49 GMT</lastBuildDate><item><title><![CDATA[Github Actionsでブログをデプロイする]]></title><description><![CDATA[このブログが Github Pages を利用していることは先の記事にも書いた。
+ブログを構成するソースコードは Github Pages を利用しているリポジトリとは別リポジトリに存在していて、ちょっと管理が面倒な状態になっている。
+であれば(？)、Github Actions…]]></description><link>https://keensyo.github.io/set-up-githubactions/</link><guid isPermaLink="false">https://keensyo.github.io/set-up-githubactions/</guid><pubDate>Sat, 13 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;このブログが Github Pages を利用していることは&lt;a href=&quot;https://keensyo.github.io/createblog/&quot;&gt;先の記事&lt;/a&gt;にも書いた。&lt;/br&gt;
+ブログを構成するソースコードは Github Pages を利用しているリポジトリとは別リポジトリに存在していて、ちょっと管理が面倒な状態になっている。&lt;/br&gt;
+であれば(？)、Github Actions を利用して別リポジトリで管理するソースコードを push したときに keensyo.github.io にデプロイされるようになれば、&lt;/br&gt;
+すべて Github で完結して少し楽になりそうだと思い、Github Actions を導入した。&lt;/br&gt;
+裏目的として、Github Actions を使ってみたかったというのはある…&lt;/br&gt;&lt;/p&gt;
+&lt;h3&gt;状況&lt;/h3&gt;
+&lt;p&gt;2 つのリポジトリが存在する。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;ブログを構成するソースコード(GatsbyJS)を管理しているリポジトリ(以下、SourceRepo)&lt;/li&gt;
+&lt;li&gt;Github Pages がホストされているリポジトリ(以下、PagesRepo)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;やりたいこと&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;SourceRepo から PagesRepo へデプロイしたい&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;実現のために考えたこと&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;SourceRepo に変更が入ったとき(push されたとき)はブログに変更を加えたいとき&lt;/li&gt;
+&lt;li&gt;そのため、SourceRepo への変更を検知して PagesRepo にデプロイしたい&lt;/li&gt;
+&lt;li&gt;変更を検知=変更の悪影響が無いかテストを回したい(Integration Test をしたい)&lt;/li&gt;
+&lt;li&gt;テストを回したあとにデプロイをする(Deploy したい)&lt;/li&gt;
+&lt;li&gt;CI/CD を仕組み化すれば実現できそう →Github Actions を使えばよさそう&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;何をやったか&lt;/h3&gt;
+&lt;p&gt;まず、Github Actions は名前しか知らなかったので以下でざっくり勉強した。&lt;/br&gt;
+&lt;a href=&quot;https://docs.github.com/ja/actions/learn-github-actions&quot;&gt;Github Actions について学ぶ&lt;/a&gt;&lt;/br&gt;
+&lt;a href=&quot;https://knowledge.sakura.ad.jp/23478/&quot;&gt;Github の新機能「Github Actions」で試す CI/CD&lt;/a&gt;&lt;/br&gt;
+公式ドキュメントは網羅的でよいが、概要をつかむには後者の記事が役立った。&lt;/p&gt;
+&lt;p&gt;概要を掴んだあとは、とにかくやり方を調べた。&lt;/br&gt;
+とくにリポジトリをまたいだデプロイについては、以下の記事が大変参考になった。&lt;/br&gt;
+&lt;a href=&quot;https://3nan3.github.io/post/2019122201_github_actions/&quot;&gt;Github Actions で別のリポジトリに git push する&lt;/a&gt;&lt;/br&gt;
+認証周りも丁寧に解説いただいていて、なるほどなるほどと読み進めていたが、Github Actions で肝となる YAML で詰まった。&lt;/br&gt;
+上記ブログだと、Hugo を利用しており記載いただいている YAML を微妙に読み替える必要があったのだった。&lt;/br&gt;
+そんなときに&lt;a href=&quot;https://qiita.com/peaceiris/items/2f6d83802f2aefa66f9d&quot;&gt;Gatsby のサイトを Github Actions で Github Pages にデプロイ&lt;/a&gt;というドンピシャな記事を見つけ、めちゃくちゃに参考にさせてもらった。&lt;/br&gt;
+&lt;a href=&quot;https://github.com/peaceiris/actions-gh-pages&quot;&gt;Github&lt;/a&gt;にも丁寧な README があり、本筋じゃないけど SSH の Deploy Key 作成はこの README が無かったらうまくできていなかったと思う。&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;というわけで、インターネットにお世話になり、無事 Github Actions で CI/CD できるようになった。&lt;/p&gt;
+&lt;h3&gt;どこでハマったか&lt;/h3&gt;
+&lt;h5&gt;&lt;code class=&quot;language-text&quot;&gt;github_token&lt;/code&gt;ではなく&lt;code class=&quot;language-text&quot;&gt;deploy_key&lt;/code&gt;と書かなくてはいけないこと&lt;/h5&gt;
+&lt;p&gt;YAML の話で、参考にした記事だと以下のように書かれている。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;yaml&quot;&gt;&lt;pre class=&quot;language-yaml&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; deploy
+  &lt;span class=&quot;token key atrule&quot;&gt;uses&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; peaceiris/actions&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;gh&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;pages@v3
+  &lt;span class=&quot;token key atrule&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token key atrule&quot;&gt;github_token&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; $&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; secrets.GITHUB_TOKEN &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;今回のように、リポジトリをまたいだデプロイの際は、&lt;code class=&quot;language-text&quot;&gt;external_repository&lt;/code&gt;という環境変数を設定しここにデプロイしたいリポジトリ名を書く必要がある。&lt;/br&gt;
+それと同時に、&lt;code class=&quot;language-text&quot;&gt;github_token&lt;/code&gt;ではなく&lt;code class=&quot;language-text&quot;&gt;deploy_key&lt;/code&gt;と変えなくてはいけない。これも上で紹介している README に書いてあるのだが、はじめは github&lt;em&gt;token と書いて混乱していた。&lt;/br&gt;
+さらにいうと、${{ secrets.GITHUB&lt;/em&gt;TOKEN }}もそのまま GITHUB_TOKEN と書いていたが、自分が設定している名前を使えばいいことにも最初は気づかなかった…&lt;/br&gt;
+イメージとしてはこんな感じになる。&lt;/br&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;yaml&quot;&gt;&lt;pre class=&quot;language-yaml&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; deploy
+  &lt;span class=&quot;token key atrule&quot;&gt;uses&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; peaceiris/actions&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;gh&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;pages@v3
+  &lt;span class=&quot;token key atrule&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token key atrule&quot;&gt;deploy_key&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; $&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; secrets.FOOBAR &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token key atrule&quot;&gt;external_repository&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; username/username.github.io&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;ssh の公開鍵と秘密鍵の設定を間違っていたこと&lt;/h4&gt;
+&lt;p&gt;取り違えていたとかではなく、含める文字列が足りていなかった。&lt;/br&gt;
+何度 git push しても&lt;code class=&quot;language-text&quot;&gt;Action failed with &amp;quot;The process &amp;#39;/usr/bin/ssh-add&amp;#39; failed with exit code 1&amp;quot;&lt;/code&gt;と出てしまいビルドエラー。&lt;/br&gt;
+なんで ssh-add できないのか大いに頭を悩ませていたが、以下の記事を見つけ解決した。&lt;/br&gt;
+&lt;a href=&quot;https://forums.fast.ai/t/fastpages-ssh-issues-solved/65948&quot;&gt;[fastpages]SSH issues? - SOLVED&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;この質問者と全く同じことをやっていて、海外に同じことをやっている人がいる〜 というのと、オープンな場所で質問してくれてて Big Thanks!!!という気持ち。&lt;/br&gt;
+ssh 全くわからないということが否が応でもわかってしまったので、この後 ssh について勉強しました。&lt;/p&gt;
+&lt;h3&gt;おわりに&lt;/h3&gt;
+&lt;p&gt;CI/CD といろんなトラブルを経験できてよかった。&lt;/br&gt;
+平日の夜にちまちまやっていたので時間はかかってしまったが、work-flow に緑のチェックマークがつくのは嬉しい。&lt;/br&gt;
+気が向いたらもうちょっと工夫してみようと思う。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[どこかに行きたい]]></title><description><![CDATA[1 年以上旅行に行っていない。
 社会人になってから、定期的にどこかに行っていた。多分に現実逃避だったのだけれど、ほどよい休息になっていた。
 マイルを貯めて海外旅行に行くぞ！と息巻いて作った ANA…]]></description><link>https://keensyo.github.io/about-traveling/</link><guid isPermaLink="false">https://keensyo.github.io/about-traveling/</guid><pubDate>Sat, 06 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;1 年以上旅行に行っていない。&lt;/br&gt;
 社会人になってから、定期的にどこかに行っていた。多分に現実逃避だったのだけれど、ほどよい休息になっていた。&lt;/br&gt;
