@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[keensyo's blog]]></title><description><![CDATA[@keensyoのブログです。]]></description><link>https://keensyo.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 04 Mar 2021 15:12:49 GMT</lastBuildDate><item><title><![CDATA[クラフトビールを飲む]]></title><description><![CDATA[COVID-19 で外出自粛となり、お酒を飲むことがほとんどなくなった。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[keensyo's blog]]></title><description><![CDATA[@keensyoのブログです。]]></description><link>https://keensyo.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 17 Mar 2021 00:31:16 GMT</lastBuildDate><item><title><![CDATA[paizaのD問題が解けなかった]]></title><description><![CDATA[直近 2 週間ほど C#に入門していた。
+入門書を 2 周したので、手を動かして知識の定着をさせようと思い、paiza のスキルチェックに手を出してみた。
+ 結果として、D 問題が解けなかった。 D…]]></description><link>https://keensyo.github.io/programming-paiza/</link><guid isPermaLink="false">https://keensyo.github.io/programming-paiza/</guid><pubDate>Wed, 17 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;直近 2 週間ほど C#に入門していた。&lt;/br&gt;
+入門書を 2 周したので、手を動かして知識の定着をさせようと思い、paiza のスキルチェックに手を出してみた。&lt;/br&gt;
+ 結果として、D 問題が解けなかった。&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;D 問題は、ごくごく初歩的なプログラムを書けるかどうかを判定する。&lt;/br&gt;
+客観的にも主観的にも今回の問題の意図はわかりやすく、さすがに解けると思っていた。&lt;/br&gt;
+解けなかったという事実を前にし、いますごく自分に失望している。&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;始業前の早朝を勉強時間に当て込んでいたこれまでの日々を思い返し、比喩ではなく少し気分が悪くなってきた。&lt;/br&gt;
+いままでやっていたことは、結局のところ「暗記」で「理解」まで落とし込めていなかったのか。&lt;/br&gt;
+C#はたしかに最近始めたばかりだが、プログラミングや周辺技術自体はこれまでもやってきたのでとにかくセンスが無いのか。&lt;/br&gt;
+いずれにしても、自分のレベル感を知ることができたのはよかったと思って、またもう一度積み上げていこう…という気持ちにはいますぐは難しい。&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;なんでこんな思いをしながらしがみついているのか、正直わからなくなるときがある。&lt;/br&gt;
+向いているか向いていないかでいうと、たぶん向いていない。&lt;/br&gt;
+それでもまだ諦めたくない、まだあがいていたいと、それだけで続けている。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[クラフトビールを飲む]]></title><description><![CDATA[COVID-19 で外出自粛となり、お酒を飲むことがほとんどなくなった。
 2020 年はここ数年でいちばん飲まなかった。居酒屋で夜通し飲んでいたのが遠い昔に感じる。
 この傾向は 202…]]></description><link>https://keensyo.github.io/beer/</link><guid isPermaLink="false">https://keensyo.github.io/beer/</guid><pubDate>Sun, 28 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;COVID-19 で外出自粛となり、お酒を飲むことがほとんどなくなった。&lt;/br&gt;
 2020 年はここ数年でいちばん飲まなかった。居酒屋で夜通し飲んでいたのが遠い昔に感じる。&lt;/br&gt;
