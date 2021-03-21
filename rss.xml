@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[keensyo's blog]]></title><description><![CDATA[@keensyoのブログです。]]></description><link>https://keensyo.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 17 Mar 2021 00:31:16 GMT</lastBuildDate><item><title><![CDATA[paizaのD問題が解けなかった]]></title><description><![CDATA[直近 2 週間ほど C#に入門していた。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[keensyo's blog]]></title><description><![CDATA[@keensyoのブログです。]]></description><link>https://keensyo.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 21 Mar 2021 02:46:06 GMT</lastBuildDate><item><title><![CDATA[ブログへの変更点]]></title><description><![CDATA[細々とブログに手を入れているのでその内容について。 favicon を変更した GatsbyJS の favicon のままだったので変更した。
+Favicon.ioを利用。
+使い勝手が良く、かなり簡単に作れたので感謝&満足。 フォントを変更した githubTheme…]]></description><link>https://keensyo.github.io/update-blog/</link><guid isPermaLink="false">https://keensyo.github.io/update-blog/</guid><pubDate>Sun, 21 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;細々とブログに手を入れているのでその内容について。&lt;/p&gt;
+&lt;h4&gt;favicon を変更した&lt;/h4&gt;
+&lt;p&gt;GatsbyJS の favicon のままだったので変更した。&lt;/br&gt;
+&lt;a href=&quot;https://favicon.io/favicon-generator/&quot;&gt;Favicon.io&lt;/a&gt;を利用。&lt;/br&gt;
+使い勝手が良く、かなり簡単に作れたので感謝&amp;#x26;満足。&lt;/p&gt;
+&lt;h4&gt;フォントを変更した&lt;/h4&gt;
+&lt;p&gt;githubTheme というフォントテーマを使っている。&lt;/br&gt;
+&lt;a href=&quot;https://www.gatsbyjs.com/docs/using-typography-js/&quot;&gt;公式&lt;/a&gt;や&lt;a href=&quot;https://blog.ue-y.me/gatsby-typography/&quot;&gt;この記事&lt;/a&gt;、あと&lt;a href=&quot;https://nekumiyama.github.io/amaNekublog/20200906_typography/&quot;&gt;こっちの記事&lt;/a&gt;も参考にさせてもらった。&lt;/br&gt;
+流れはオーソドックスで、&lt;code class=&quot;language-text&quot;&gt;gatsby-plugin-typography&lt;/code&gt;を npm install し、フォントの情報を書いておく typography.js をつくり対応した。&lt;/br&gt;
+ただ、これだけだとうまく反映されず style.css というブログデザイン全体を管理する CSS のフォントに関わる部分をコメントアウト(もしくは削除)する必要があった。&lt;/br&gt;
+ついでに、文字サイズの変更や太さも修正した。&lt;/p&gt;
+&lt;h4&gt;全体的にシンプルにした&lt;/h4&gt;
+&lt;p&gt;gatsby-starter-blog は、デフォルトだとブログタイトルの下に著者の説明が表示されており必要なかったため削除した。&lt;/br&gt;
+同様に、フッターの記載も削除した。あとでフッターはいい感じにする予定。&lt;/p&gt;
+&lt;h4&gt;今後に向けて&lt;/h4&gt;
+&lt;p&gt;About ページをきちんと作る。&lt;/br&gt;
+フッターも整備する。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[paizaのD問題が解けなかった]]></title><description><![CDATA[直近 2 週間ほど C#に入門していた。
 入門書を 2 周したので、手を動かして知識の定着をさせようと思い、paiza のスキルチェックに手を出してみた。
  結果として、D 問題が解けなかった。 D…]]></description><link>https://keensyo.github.io/programming-paiza/</link><guid isPermaLink="false">https://keensyo.github.io/programming-paiza/</guid><pubDate>Wed, 17 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;直近 2 週間ほど C#に入門していた。&lt;/br&gt;
 入門書を 2 周したので、手を動かして知識の定着をさせようと思い、paiza のスキルチェックに手を出してみた。&lt;/br&gt;
