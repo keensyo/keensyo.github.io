@@ -1,4 +1,90 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[keensyo's blog]]></title><description><![CDATA[@keensyoのブログです。]]></description><link>https://keensyo.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 04 Apr 2021 05:58:10 GMT</lastBuildDate><item><title><![CDATA[社会人になって5年]]></title><description><![CDATA[今年の 4 月で就職をして 5 年が経った。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[keensyo's blog]]></title><description><![CDATA[@keensyoのブログです。]]></description><link>https://keensyo.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 29 Apr 2021 01:38:51 GMT</lastBuildDate><item><title><![CDATA[ASP.NET CoreでWebAPIをつくるチュートリアルをやった]]></title><description><![CDATA[仕事で C#で API を書くことになるのでやってみました。
+チュートリアル: ASP.NET Core で Web API を作成する 今回 Visual Studio for Mac…]]></description><link>https://keensyo.github.io/dotnet-tutorial/</link><guid isPermaLink="false">https://keensyo.github.io/dotnet-tutorial/</guid><pubDate>Sun, 11 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;仕事で C#で API を書くことになるのでやってみました。&lt;/br&gt;
+&lt;a href=&quot;https://docs.microsoft.com/ja-jp/aspnet/core/tutorials/first-web-api?view=aspnetcore-3.1&amp;#x26;tabs=visual-studio&quot;&gt;チュートリアル: ASP.NET Core で Web API を作成する&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;今回 Visual Studio for Mac を使って進めていたのですが、公式チュートリアルになぜか手順が載っていない箇所があり、ハマっていたので備忘で記載しておきます。&lt;/br&gt;&lt;/p&gt;
+&lt;h2&gt;Microsoft.EntityFrameworkCore.InMemory の追加&lt;/h2&gt;
+&lt;p&gt;チュートリアルの見出しでいうと、&lt;a href=&quot;https://docs.microsoft.com/ja-jp/aspnet/core/tutorials/first-web-api?view=aspnetcore-3.1&amp;#x26;tabs=visual-studio-code#add-a-database-context&quot;&gt;データベースコンテキストの追加&lt;/a&gt;のところです。&lt;/br&gt;
+Visual Studio Code および Visual Studio for Mac のタブを見ると、&lt;/br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Models フォルダーに TodoContext クラスを追加します。
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d6b10c796f379ccff18b253a50fbee3f/fcd25/dotnet-tutorial_1.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 24.050632911392405%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAFABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAABx4EB/8QAFhABAQEAAAAAAAAAAAAAAAAAEQAQ/9oACAEBAAEFAmc//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQAGPwJ//8QAFxABAAMAAAAAAAAAAAAAAAAAAQAQEf/aAAgBAQABPyEzFNf/2gAMAwEAAgADAAAAEAAP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAGhABAAIDAQAAAAAAAAAAAAAAAQARITGRof/aAAgBAQABPxBBQexC7exzuf/Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;img&quot;
+        title=&quot;img&quot;
+        src=&quot;/static/d6b10c796f379ccff18b253a50fbee3f/828fb/dotnet-tutorial_1.jpg&quot;
+        srcset=&quot;/static/d6b10c796f379ccff18b253a50fbee3f/ff44c/dotnet-tutorial_1.jpg 158w,
+/static/d6b10c796f379ccff18b253a50fbee3f/a6688/dotnet-tutorial_1.jpg 315w,
+/static/d6b10c796f379ccff18b253a50fbee3f/828fb/dotnet-tutorial_1.jpg 630w,
+/static/d6b10c796f379ccff18b253a50fbee3f/0ede0/dotnet-tutorial_1.jpg 945w,
+/static/d6b10c796f379ccff18b253a50fbee3f/3ac88/dotnet-tutorial_1.jpg 1260w,
+/static/d6b10c796f379ccff18b253a50fbee3f/fcd25/dotnet-tutorial_1.jpg 1590w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;とだけ書かれています。&lt;/br&gt;
+クラスを追加するだけなら別に問題はないのですが、その下に書かれているコードを見てみると&lt;/br&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;c#&quot;&gt;&lt;pre class=&quot;language-c#&quot;&gt;&lt;code class=&quot;language-c#&quot;&gt;using Microsoft.EntityFrameworkCore&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;と書かれており、そのまま続けようとしても Visual Studio がこの using 句を認識できません（グレーアウトしたまま）。&lt;/br&gt;
+C#開発をやったことがあれば、「あー NuGet パッケージが足りないんだな」とわかると思います。&lt;/br&gt;
+ただ、僕は C#をざっと勉強しただけでこのチュートリアルを始めたので、何が原因なのかよくわかりませんでした。&lt;/br&gt;
+たまたま会社の人に聞いたところ、Microsoft.EntityFrameworkCore.InMemory はで追加で入れないといけないと教えてもらい解決しました。&lt;/br&gt;
+Visual Studio のプロジェクト＞ NuGet パッケージの管理を開き、Microsoft.EntityFrameworkCore.InMemory を検索しインストールすれば OK。&lt;/br&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/9b79e25b54bb92d96751acd53e20cea1/f41ad/dotnet-tutorial_2.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.45569620253164%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAIBAwT/xAAUAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAHIVSjig//EABkQAAMAAwAAAAAAAAAAAAAAAAABAhARQf/aAAgBAQABBQLmNk0Nn//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABURAQEAAAAAAAAAAAAAAAAAABAR/9oACAECAQE/Aaf/xAAVEAEBAAAAAAAAAAAAAAAAAAAgMf/aAAgBAQAGPwKL/8QAGRABAQADAQAAAAAAAAAAAAAAAQARMVEh/9oACAEBAAE/IR4Qjsk5aSD5ZHN//9oADAMBAAIAAwAAABAXz//EABYRAQEBAAAAAAAAAAAAAAAAABEBEP/aAAgBAwEBPxAjn//EABYRAQEBAAAAAAAAAAAAAAAAAAEQIf/aAAgBAgEBPxBTk//EABwQAQACAgMBAAAAAAAAAAAAAAEAESExQVFhgf/aAAgBAQABPxB2yj3bLZxlYFgrYo9YvbiIgGfsSwbn/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;img&quot;
+        title=&quot;img&quot;
+        src=&quot;/static/9b79e25b54bb92d96751acd53e20cea1/828fb/dotnet-tutorial_2.jpg&quot;
+        srcset=&quot;/static/9b79e25b54bb92d96751acd53e20cea1/ff44c/dotnet-tutorial_2.jpg 158w,
+/static/9b79e25b54bb92d96751acd53e20cea1/a6688/dotnet-tutorial_2.jpg 315w,
+/static/9b79e25b54bb92d96751acd53e20cea1/828fb/dotnet-tutorial_2.jpg 630w,
+/static/9b79e25b54bb92d96751acd53e20cea1/0ede0/dotnet-tutorial_2.jpg 945w,
+/static/9b79e25b54bb92d96751acd53e20cea1/3ac88/dotnet-tutorial_2.jpg 1260w,
+/static/9b79e25b54bb92d96751acd53e20cea1/f41ad/dotnet-tutorial_2.jpg 1682w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;無事インストールできると、グレーアウトしていた箇所がきちんと活性化します。&lt;/br&gt;
+今回のチュートリアルで、NuGet パッケージというものがあり、必要に応じて追加していくことがわかりました。&lt;/br&gt;
+（Ruby でいうところの gem と理解しました）&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;最後に、このチュートリアルに対するフィードバックができたので、GitHub に&lt;a href=&quot;https://github.com/dotnet/AspNetCore.Docs.ja-jp/issues/385&quot;&gt;issue&lt;/a&gt;を立ててみました。&lt;/br&gt;
+修正されると嬉しいな。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[社会人になって5年]]></title><description><![CDATA[今年の 4 月で就職をして 5 年が経った。
 なんとなくキリがいいので、これまでの仕事を振り返ることにする。 はじめは営業をやっていた 就職して最初の…]]></description><link>https://keensyo.github.io/for-five-years/</link><guid isPermaLink="false">https://keensyo.github.io/for-five-years/</guid><pubDate>Sun, 04 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;今年の 4 月で就職をして 5 年が経った。&lt;/br&gt;
 なんとなくキリがいいので、これまでの仕事を振り返ることにする。&lt;/br&gt;&lt;/p&gt;
 &lt;h2&gt;はじめは営業をやっていた&lt;/h2&gt;
