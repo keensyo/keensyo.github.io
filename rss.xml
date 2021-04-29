@@ -1,5 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[keensyo's blog]]></title><description><![CDATA[@keensyoのブログです。]]></description><link>https://keensyo.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 29 Apr 2021 01:39:29 GMT</lastBuildDate><item><title><![CDATA[ASP.NET CoreでWebAPIをつくるチュートリアルをやった]]></title><description><![CDATA[仕事で C#で API を書くことになるのでやってみました。
-チュートリアル: ASP.NET Core で Web API を作成する 今回 Visual Studio for Mac…]]></description><link>https://keensyo.github.io/dotnet-tutorial/</link><guid isPermaLink="false">https://keensyo.github.io/dotnet-tutorial/</guid><pubDate>Sun, 11 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;仕事で C#で API を書くことになるのでやってみました。&lt;/br&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[keensyo's blog]]></title><description><![CDATA[@keensyoのブログです。]]></description><link>https://keensyo.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 29 Apr 2021 02:06:20 GMT</lastBuildDate><item><title><![CDATA[ASP.NET CoreでWebAPIをつくるチュートリアルをやった]]></title><description><![CDATA[2021/4/29 追記。 
+ここで書いたハマりポイントは、手順の見落としだったことがわかりました。
+Web プロジェクトの作成のセクションで、Visual Studio for Mac…]]></description><link>https://keensyo.github.io/dotnet-tutorial/</link><guid isPermaLink="false">https://keensyo.github.io/dotnet-tutorial/</guid><pubDate>Thu, 29 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;2021/4/29 追記。&lt;/strong&gt; &lt;/br&gt;
+ここで書いたハマりポイントは、手順の見落としだったことがわかりました。&lt;/br&gt;
+Web プロジェクトの作成のセクションで、Visual Studio for Mac タブを開くと一番下に以下のコマンドが記載されていましたが、スルーしてしまっていました。&lt;/br&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;c#&quot;&gt;&lt;pre class=&quot;language-c#&quot;&gt;&lt;code class=&quot;language-c#&quot;&gt;dotnet add package Microsoft.EntityFrameworkCore.InMemory&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;GitHub の issue もクローズしました。&lt;/br&gt;
+&lt;strong&gt;追記ここまで。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;仕事で C#で API を書くことになるのでやってみました。&lt;/br&gt;
 &lt;a href=&quot;https://docs.microsoft.com/ja-jp/aspnet/core/tutorials/first-web-api?view=aspnetcore-3.1&amp;#x26;tabs=visual-studio&quot;&gt;チュートリアル: ASP.NET Core で Web API を作成する&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;今回 Visual Studio for Mac を使って進めていたのですが、公式チュートリアルになぜか手順が載っていない箇所があり、ハマっていたので備忘で記載しておきます。&lt;/br&gt;&lt;/p&gt;
 &lt;h2&gt;Microsoft.EntityFrameworkCore.InMemory の追加&lt;/h2&gt;
