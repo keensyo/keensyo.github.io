@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[keensyo's blog]]></title><description><![CDATA[@keensyoのブログです。]]></description><link>https://keensyo.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 29 Apr 2021 02:06:20 GMT</lastBuildDate><item><title><![CDATA[ASP.NET CoreでWebAPIをつくるチュートリアルをやった]]></title><description><![CDATA[2021/4/29 追記。 
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[keensyo's blog]]></title><description><![CDATA[@keensyoのブログです。]]></description><link>https://keensyo.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 21 May 2021 00:36:30 GMT</lastBuildDate><item><title><![CDATA[5月日記]]></title><description><![CDATA[仕事でコードを書くようになった。
+入門書や入門サイトをやったものの、動いているコードを読み、そこに手を加えていくことの難しさにぶち当たっている。
+やりたいことはごくごく簡単なことなのに、なかなかうまくいかず、実は何も理解していないのではないかと落ち込む。
+C…]]></description><link>https://keensyo.github.io/diary/</link><guid isPermaLink="false">https://keensyo.github.io/diary/</guid><pubDate>Fri, 21 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;仕事でコードを書くようになった。&lt;/br&gt;
+入門書や入門サイトをやったものの、動いているコードを読み、そこに手を加えていくことの難しさにぶち当たっている。&lt;/br&gt;
+やりたいことはごくごく簡単なことなのに、なかなかうまくいかず、実は何も理解していないのではないかと落ち込む。&lt;/br&gt;
+C#をやっている。いわゆる MVC フレームワークではなく、WebAPI フレームワーク。&lt;/br&gt;
+1%も理解していないと思うが、.NET はいろんなことを吸収しよろしくやってくれて強力っぽい。&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;TypeScript もやる必要があるが、正直 JavaScript もままなっていないため焦っている。&lt;/br&gt;
+なかなか仕事以外の時間を取りづらいのが厳しい。ブログ書いている場合ではない。&lt;/br&gt;
+最近、&lt;a href=&quot;https://deno.land/&quot;&gt;Deno&lt;/a&gt;というランタイムがあることを知った。&lt;/br&gt;
+これも全然よくわかってないけど、Node.js の進化系のようなものらしい。&lt;/br&gt;
+おもしろそうなので触ってみたい。&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;私生活については相変わらず。&lt;/br&gt;
+何ということもないのにバタバタと追われている感覚がある。&lt;/br&gt;
+やりたいこととやったほうがいいことに板挟みになっていて、必要最低限のことしかできていない。&lt;/br&gt;
+しかもこれですら、本当に必要最低限なのかどうかがわからない。&lt;/br&gt;
+もっと時間を取らないといけないのに、少しでも時間があれば技術に触れていたいという気持ちとの戦いを毎日している。&lt;/br&gt;
+根性でどうにかするのはひとつのやり方だけど、これは同時に体力勝負になるので全く健全ではない。&lt;/br&gt;
+身の丈に合ったやり方を探し続けるしかないのだろうな。&lt;/br&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ASP.NET CoreでWebAPIをつくるチュートリアルをやった]]></title><description><![CDATA[2021/4/29 追記。 
 ここで書いたハマりポイントは、手順の見落としだったことがわかりました。
 Web プロジェクトの作成のセクションで、Visual Studio for Mac…]]></description><link>https://keensyo.github.io/dotnet-tutorial/</link><guid isPermaLink="false">https://keensyo.github.io/dotnet-tutorial/</guid><pubDate>Thu, 29 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;2021/4/29 追記。&lt;/strong&gt; &lt;/br&gt;
 ここで書いたハマりポイントは、手順の見落としだったことがわかりました。&lt;/br&gt;
