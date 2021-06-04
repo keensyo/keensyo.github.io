@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[keensyo's blog]]></title><description><![CDATA[@keensyoのブログです。]]></description><link>https://keensyo.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 21 May 2021 00:36:30 GMT</lastBuildDate><item><title><![CDATA[5月日記]]></title><description><![CDATA[仕事でコードを書くようになった。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[keensyo's blog]]></title><description><![CDATA[@keensyoのブログです。]]></description><link>https://keensyo.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 04 Jun 2021 15:13:49 GMT</lastBuildDate><item><title><![CDATA[プロジェクトに追加したファイルを認識させる（Visual Studio）]]></title><description><![CDATA[仕事で C#を使っているので、同時に Visual Studio も利用している。
+Visual Studio…]]></description><link>https://keensyo.github.io/visualstudio-tips/</link><guid isPermaLink="false">https://keensyo.github.io/visualstudio-tips/</guid><pubDate>Fri, 04 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;仕事で C#を使っているので、同時に Visual Studio も利用している。&lt;/br&gt;
+Visual Studio、慣れてきたのであまり気にならなくなってきたが、けっこう戸惑いながら使ってきた。&lt;/br&gt;
+まだ手に馴染んでいないので、修行が足りないなという感じ。&lt;/br&gt;
+修行不足のためにごくごく初歩的だが、知らなくて 30 分ぐらい時間を使ってしまったことがあったのでまとめておく。&lt;/br&gt;&lt;/p&gt;
+&lt;h3&gt;Visual Studio のプロジェクトにファイルを追加したいとき&lt;/h3&gt;
+&lt;p&gt;テストデータを csv で用意し、それを読み込ませてテストしようと思ったときにハマった。&lt;/br&gt;
+つくった csv を所定のフォルダ配下に移動させ、Visual Studio でそのフォルダを見ると csv が見当たらない。&lt;/br&gt;
+Visual Studio Code でそのフォルダを開くと、たしかに csv は存在している。&lt;/br&gt;
+また、Visual Studio 上でそのフォルダを右クリックし、エクスプローラーで開くを選択しても csv は存在している。&lt;/br&gt;
+いろいろググってみると、&lt;a href=&quot;https://social.msdn.microsoft.com/Forums/aspnet/ja-JP/76552b96-5018-422f-8f75-31d4c51b26ce/visual-studio?forum=vsgeneralja&quot;&gt;このサイト&lt;/a&gt;が見つかり試したところうまくいった。&lt;/br&gt;
+インターネットありがとう。&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;書いてあることそのままだが、以下で解決。&lt;/br&gt;
+ソリューションエクスプローラー上で「全てのファイルを表示」をクリック。&lt;/br&gt;
+表示されたファイルを右クリックし、「プロジェクトに含める」をクリック。&lt;/br&gt;&lt;/p&gt;
+&lt;h3&gt;余談&lt;/h3&gt;
+&lt;p&gt;ちなみに、これは Windows の話で、Visual Studio for Mac だとそもそもプロジェクトに含まれないなんてことが起きないかも。&lt;/br&gt;
+手元で適当なソリューションにフォルダをつくり、Finder 上でドラッグ&amp;#x26;ドロップでファイルを追加してみたが、プロジェクトにきちんと含まれていた。&lt;/br&gt;
+軽くググっても、それらしいページがヒットしないので Windows 特有なのかもしれない。&lt;/br&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[5月日記]]></title><description><![CDATA[仕事でコードを書くようになった。
 入門書や入門サイトをやったものの、動いているコードを読み、そこに手を加えていくことの難しさにぶち当たっている。
 やりたいことはごくごく簡単なことなのに、なかなかうまくいかず、実は何も理解していないのではないかと落ち込む。
 C…]]></description><link>https://keensyo.github.io/diary/</link><guid isPermaLink="false">https://keensyo.github.io/diary/</guid><pubDate>Fri, 21 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;仕事でコードを書くようになった。&lt;/br&gt;
