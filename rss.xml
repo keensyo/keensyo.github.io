@@ -1,4 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[keensyo's blog]]></title><description><![CDATA[@keensyoのブログです。]]></description><link>https://keensyo.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 04 Jun 2021 15:13:49 GMT</lastBuildDate><item><title><![CDATA[プロジェクトに追加したファイルを認識させる（Visual Studio）]]></title><description><![CDATA[仕事で C#を使っているので、同時に Visual Studio も利用している。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[What I Thought]]></title><description><![CDATA[@keensyoのブログです。]]></description><link>https://keensyo.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 08 Jul 2021 08:08:03 GMT</lastBuildDate><item><title><![CDATA[会社員に向かない普通の人]]></title><description><![CDATA[…]]></description><link>https://keensyo.github.io/for-all-ordinary-person/</link><guid isPermaLink="false">https://keensyo.github.io/for-all-ordinary-person/</guid><pubDate>Wed, 07 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;あるグループに所属し期待される成果を、あるいはそれ以上のことを成し遂げることは存外難しいことのように思う。&lt;/br&gt;
+自分の現状を把握し、評価者と認識をすり合わせ、期待に応えるために計画を立て修正しながら実行する。&lt;/br&gt;
+成果がわかりやすければ、あるいは評価者が十分にこちらの状況を把握している場合は意識しなくてもよいかもしれないが、アピールも必要になる。&lt;/br&gt;
+これらを当然のようにできることはスキルだと思う。&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;スキルなので伸ばそうとしなければできるようにはならない。&lt;/br&gt;
+このスキルは、達成意欲とでも言い換えられようか。&lt;/br&gt;
+“意欲”という単語を使うと、気合などの精神的な話に聞こえるが、巷に方法論はあふれている。&lt;/br&gt;
+つまり、マネージすることが可能なスキルなのだと思っている。&lt;/br&gt;
+例えば、組織の目標と個人の目標の方向を合わせれば、自然と達成に向かい成果も出るという話。&lt;/br&gt;
+間違っていないが、経験上少しでも集中力に欠けると途端にうまくいかなくなる。&lt;/br&gt;
+興味関心が変わる、外部環境の変化、漠然とした不安、など人の集中を削ぐ原因は本当に多くある。&lt;/br&gt;
+こういった場合に立て直すことができるかできないかが、このスキルの重要な要素のひとつだと思っている。&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;もうひとつ重要なことが、正しく成果を伝えること。&lt;/br&gt;
+目標に対してどうだったのか、どれくらい達成できたのか、何が課題なのか。&lt;/br&gt;
+こうやって要素を挙げるのは簡単だが、実際に振り返ると結構難しい。&lt;/br&gt;
+うまくいったことはたいてい記憶が薄く、うまくいかなかったことのほうが記憶に残っている。&lt;/br&gt;
+そのため、記憶に頼らずにすむよう、できる限り定量的かつ可視化される目標を設定するのがよさそうである。&lt;/br&gt;
+ただ、そう都合よく転がっているものではないので、目標を立てるときに悩み、振り返るときに苦労するのだと思う。&lt;/br&gt;
+苦しくてもここで言語化し、アピールできなければ評価を受けづらい。&lt;/br&gt;
+評価者も悪い評価をつけてやろうとは思っていない（と信じたい…）。&lt;/br&gt;
+正しく前向きな評価を受けるためには、被評価者がきちんと伝えないといけない。&lt;/br&gt;
+伝えることも立派なスキルで、つまりは伸ばす必要がある。&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;こういったことにストレスを感じたり、うまくいかないと感じることはよくあることと思う。&lt;/br&gt;
+おそらく多くの人はうまくいくようにスキルを磨き、評価を受けられるようになる。&lt;/br&gt;
+ここでうまくいかないなぁと思う人の何割かが、いわゆる起業家になるのかなと想像する。&lt;/br&gt;
+彼らは高次の評価を受けることになり、そういうほうが向いている（むしろ興奮する）ことが多そうである。&lt;/br&gt;
+一方で、起業家ではない普通の人が上に書いたようなスキルの習得に苦労していることのほうが多いのではないかと思う。&lt;/br&gt;
+突き抜けた人はわかりやすく評価を受け、そうではない人は埋もれていく。&lt;/br&gt;
+成果を出すには、という話は研修などでどうにかなるものでもなく、結局できる人はできる、という身も蓋もない話になりがちで、どうにかできるといいなとぼんやり考える。&lt;/br&gt;
+競争原理には都合がよく、すべてを救うのは途方もない話とは思うが、スキルである以上は習得できるようなサポートとそれに伴うよりよい選択肢ができるともっと生きやすくなるはずで、生産性向上やら DX やらはこういうところも考えないと結局はスケールしないのではと思ってしまった。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[プロジェクトに追加したファイルを認識させる（Visual Studio）]]></title><description><![CDATA[仕事で C#を使っているので、同時に Visual Studio も利用している。
 Visual Studio…]]></description><link>https://keensyo.github.io/visualstudio-tips/</link><guid isPermaLink="false">https://keensyo.github.io/visualstudio-tips/</guid><pubDate>Fri, 04 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;仕事で C#を使っているので、同時に Visual Studio も利用している。&lt;/br&gt;
 Visual Studio、慣れてきたのであまり気にならなくなってきたが、けっこう戸惑いながら使ってきた。&lt;/br&gt;
 まだ手に馴染んでいないので、修行が足りないなという感じ。&lt;/br&gt;
