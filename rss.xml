@@ -1,4 +1,55 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[What I Thought]]></title><description><![CDATA[@keensyoのブログです。]]></description><link>https://keensyo.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 08 Jul 2021 08:08:03 GMT</lastBuildDate><item><title><![CDATA[会社員に向かない普通の人]]></title><description><![CDATA[…]]></description><link>https://keensyo.github.io/for-all-ordinary-person/</link><guid isPermaLink="false">https://keensyo.github.io/for-all-ordinary-person/</guid><pubDate>Wed, 07 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;あるグループに所属し期待される成果を、あるいはそれ以上のことを成し遂げることは存外難しいことのように思う。&lt;/br&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[What I Thought]]></title><description><![CDATA[@keensyoのブログです。]]></description><link>https://keensyo.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 17 Jul 2021 02:29:15 GMT</lastBuildDate><item><title><![CDATA[ng newするとkarma-jasmine-html-reporterのインストールに失敗する]]></title><description><![CDATA[Angular After Tutorialを始めようと思い、ng new したらエラーになった。 jasmine-core、karma-jasmine-html-reporter 辺りの依存関係が解決できないようだ。
+解消するために何をしたかメモ。 結論 node…]]></description><link>https://keensyo.github.io/angular-error/</link><guid isPermaLink="false">https://keensyo.github.io/angular-error/</guid><pubDate>Sat, 17 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://zenn.dev/lacolaco/books/angular-after-tutorial&quot;&gt;Angular After Tutorial&lt;/a&gt;を始めようと思い、ng new したらエラーになった。&lt;/br&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; ERR&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt; ERESOLVE unable to resolve dependency tree
+&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; ERR&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; ERR&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt; While resolving: users@0.0.0
+&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; ERR&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt; Found: jasmine-core@3.7.1
+&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; ERR&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt; node_modules/jasmine-core
+&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; ERR&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;   dev jasmine-core@&lt;span class=&quot;token string&quot;&gt;&quot;~3.7.0&quot;&lt;/span&gt; from the root project
+&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; ERR&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; ERR&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt; Could not resolve dependency:
+&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; ERR&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt; peer jasmine-core@&lt;span class=&quot;token string&quot;&gt;&quot;&gt;=3.8&quot;&lt;/span&gt; from karma-jasmine-html-reporter@1.7.0
+&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; ERR&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt; node_modules/karma-jasmine-html-reporter
+&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; ERR&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;   dev karma-jasmine-html-reporter@&lt;span class=&quot;token string&quot;&gt;&quot;^1.5.0&quot;&lt;/span&gt; from the root project
+&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; ERR&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; ERR&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt; Fix the upstream dependency conflict, or retry
+&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; ERR&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt; this &lt;span class=&quot;token builtin class-name&quot;&gt;command&lt;/span&gt; with --force, or --legacy-peer-deps
+&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; ERR&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt; to accept an incorrect &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;and potentially broken&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; dependency resolution.
+&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; ERR&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; ERR&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt; See /Users/kensyosakurai/.npm/eresolve-report.txt &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; a full report.
+
+&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; ERR&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt; A complete log of this run can be found in:
+&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; ERR&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;     /Users/kensyosakurai/.npm/_logs/2021-07-16T00_33_06_402Z-debug.log
+✖ Package &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; failed, see above.
+The Schematic workflow failed. See above.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;jasmine-core、karma-jasmine-html-reporter 辺りの依存関係が解決できないようだ。&lt;/br&gt;
+解消するために何をしたかメモ。&lt;/br&gt;&lt;/p&gt;
+&lt;h3&gt;結論&lt;/h3&gt;
+&lt;p&gt;node のバージョンを 14.16.1 に落として再実行。&lt;/p&gt;
+&lt;h3&gt;やったこと&lt;/h3&gt;
+&lt;p&gt;とりあえずググると試行錯誤された以下の記事が見つかった。&lt;/br&gt;
+&lt;a href=&quot;https://zenn.dev/hashito/articles/17239288bb63c5&quot;&gt;Angular@cli で ng new するとエラーになる&lt;/a&gt;&lt;/br&gt;
+かなり細かく書いてもらっており、参考にさせてもらった。&lt;/br&gt;
+自分の環境と照らし合わせて怪しそうな箇所だった&lt;a href=&quot;https://zenn.dev/hashito/articles/17239288bb63c5#node.js%E7%92%B0%E5%A2%83%E3%81%8C2%E3%81%A4%E3%81%AF%E3%81%84%E3%81%A3%E3%81%A6%E3%81%84%E3%81%A6%E5%B9%B2%E6%B8%89%E3%81%97%E3%81%A6%E3%81%84%E3%82%8B%E3%81%AE%E3%81%A7%E3%80%81%E7%89%87%E6%96%B9%E3%82%92%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B&quot;&gt;node.js 環境が 2 つはいっていて干渉しているので、片方を削除する&lt;/a&gt;をまずは試した。&lt;/br&gt;
+記事とは違い、自分の場合は nvm を残した。&lt;/br&gt;
+深い意味はなく、nvm を使って node を管理しようとつい先日触っていたので nodebrew はいらないなという背景。&lt;/br&gt;
+&lt;a href=&quot;https://qiita.com/tonkotsuboy_com/items/f5d17f0b9698554a7716&quot;&gt;Nodebrew 本体を削除する方法&lt;/a&gt;を参考に、PATH も削除。なぜか、~/.zprofile のほうに定義していた…&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;当然これだけではうまくいかなかったので、zenn のほうで書かれていた node のバージョンを 14.16.1 に変更することを試した。&lt;/br&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;nvm &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;14.16&lt;/span&gt;.1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;実行後はこんな感じ。&lt;/br&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;nvm list
+-&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;     v14.16.1
+       v14.17.1
+         system&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;この状態で ng new すると成功した。&lt;/br&gt;&lt;/p&gt;
+&lt;h3&gt;なぜうまくいかなかったのか&lt;/h3&gt;
+&lt;p&gt;zenn で言及されていた&lt;a href=&quot;https://stackoverflow.com/questions/67433893/unable-to-resolve-dependency-tree-error-for-creating-new-angular-project/67451478#67451478&quot;&gt;stackoverflow&lt;/a&gt;には npm7 系で node が最新だとうまくいかない issue があるよ、ということが書かれていたので探してみた。&lt;/br&gt;
+すると、closed にはなっているものの&lt;a href=&quot;https://github.com/angular/angular-cli/issues/21326&quot;&gt;同じこと&lt;/a&gt;を挙げている人がいた。&lt;/br&gt;
+angular team の人のコメントによると、karma-jasmine-html-reporter のリリースが起因していて、jasmine-core のバージョン 3.7 をサポートしていないことが原因らしい。&lt;/br&gt;
+npm7 系だと peer dependency の挙動が変わってしまっていると。&lt;/br&gt;
+だから node を 14 系にすると、npm も 6 系になるから解消するということと理解した。&lt;/br&gt;
+issue にワークアラウンドが書いてあるので、node 変えなくてもよかったかも。&lt;/br&gt;
+でも、もともと 14.17.1 を入れていたから問題なさそうなのに…ちょっと謎が残る。&lt;/br&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[会社員に向かない普通の人]]></title><description><![CDATA[…]]></description><link>https://keensyo.github.io/for-all-ordinary-person/</link><guid isPermaLink="false">https://keensyo.github.io/for-all-ordinary-person/</guid><pubDate>Wed, 07 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;あるグループに所属し期待される成果を、あるいはそれ以上のことを成し遂げることは存外難しいことのように思う。&lt;/br&gt;
 自分の現状を把握し、評価者と認識をすり合わせ、期待に応えるために計画を立て修正しながら実行する。&lt;/br&gt;
 成果がわかりやすければ、あるいは評価者が十分にこちらの状況を把握している場合は意識しなくてもよいかもしれないが、アピールも必要になる。&lt;/br&gt;
 これらを当然のようにできることはスキルだと思う。&lt;/br&gt;&lt;/p&gt;
