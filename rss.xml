@@ -1,4 +1,115 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[What I Thought]]></title><description><![CDATA[@keensyoのブログです。]]></description><link>https://keensyo.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 17 Jul 2021 02:29:15 GMT</lastBuildDate><item><title><![CDATA[ng newするとkarma-jasmine-html-reporterのインストールに失敗する]]></title><description><![CDATA[Angular After Tutorialを始めようと思い、ng new したらエラーになった。 jasmine-core、karma-jasmine-html-reporter 辺りの依存関係が解決できないようだ。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[What I Thought]]></title><description><![CDATA[@keensyoのブログです。]]></description><link>https://keensyo.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 09 Aug 2021 15:33:47 GMT</lastBuildDate><item><title><![CDATA[DBeaverでRailsのローカルDBを接続する]]></title><description><![CDATA[はじめに 友人の Rails プロジェクトに参加させてもらえることになり、あれこれキャッチアップしているのだが、DB の状況がよくわからないという課題が出てきた。
+ActiveRecord なので、ターミナルで rails c…]]></description><link>https://keensyo.github.io/dbeaver-set-up/</link><guid isPermaLink="false">https://keensyo.github.io/dbeaver-set-up/</guid><pubDate>Mon, 09 Aug 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;友人の Rails プロジェクトに参加させてもらえることになり、あれこれキャッチアップしているのだが、DB の状況がよくわからないという課題が出てきた。&lt;/br&gt;
+ActiveRecord なので、ターミナルで rails c すれば一発でテーブルを参照できる。&lt;/br&gt;
+が、永遠の Rails 初心者であること、仕事では SQL クライアントでデータを確認しているため、慣れているやり方を使いたいなと思いよさげな SQL クライアントを探した。&lt;/br&gt;
+少し探すと、Mac であれば&lt;a href=&quot;https://dbeaver.io/&quot;&gt;DBeaver&lt;/a&gt;の評判が良さそうだったので試してみた。&lt;/br&gt;&lt;/p&gt;
+&lt;h2&gt;手順&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://dbeaver.io/&quot;&gt;DBeaver&lt;/a&gt;にアクセスし、Download をクリックする。&lt;/br&gt;
+個人で利用する範囲であれば、Community Edition で十分だと思う。Mac OS X(dmg)をクリックする。&lt;/br&gt;
+Brew や MacPorts 経由でのインストールも紹介されているが、個人的に GUI をこれらで管理することに違和感があったため、dmg ファイルにした。&lt;/br&gt;
+ダウンロードが始まるので完了するまで待つ。&lt;/br&gt;
+自動で新しい接続の設定画面が開くので、設定したい DB を選ぶ。&lt;/br&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 65.18987341772153%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEE/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAcdlQD//xAAXEAEAAwAAAAAAAAAAAAAAAAAQASEx/9oACAEBAAEFAotx/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQAGPwJf/8QAGRABAAIDAAAAAAAAAAAAAAAAARARACEx/9oACAEBAAE/IVtdSBxhH//aAAwDAQACAAMAAAAQ3/8A/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAHBABAQEBAAIDAAAAAAAAAAAAAREAITFBUWGB/9oACAEBAAE/EJPOGDDQhQWfG56A/NwBB7hZ9547/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;img&quot;
+        title=&quot;img&quot;
+        src=&quot;/static/6844bc4b78309f47f184b76a7ae37f7b/828fb/db_selected.jpg&quot;
+        srcset=&quot;/static/6844bc4b78309f47f184b76a7ae37f7b/ff44c/db_selected.jpg 158w,
+/static/6844bc4b78309f47f184b76a7ae37f7b/a6688/db_selected.jpg 315w,
+/static/6844bc4b78309f47f184b76a7ae37f7b/828fb/db_selected.jpg 630w,
+/static/6844bc4b78309f47f184b76a7ae37f7b/0ede0/db_selected.jpg 945w,
+/static/6844bc4b78309f47f184b76a7ae37f7b/4017f/db_selected.jpg 990w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;
+今回は PostgreSQL だったので、アイコンをクリックする。&lt;/br&gt;
+接続設定画面が開くので、以下のように設定した。&lt;/br&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Host: localhost&lt;/br&gt;
+Database: Rails プロジェクトの config/database.yml 内で定義されている development の database を設定&lt;/br&gt;
+ユーザー名：PC のローカル環境に直接 Rails プロジェクトをクローンしているため、PC のユーザー名を設定&lt;/br&gt;
+パスワード：未設定&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c5eb0893efa2d5906b4545549f4f3aa2/0c20b/db_connection_settings.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 65.18987341772153%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEE/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQAC/9oADAMBAAIQAxAAAAHKIK0f/8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQABBQJf/8QAFREBAQAAAAAAAAAAAAAAAAAAACH/2gAIAQMBAT8BR//EABURAQEAAAAAAAAAAAAAAAAAAAAh/9oACAECAQE/AVf/xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAaEAACAgMAAAAAAAAAAAAAAAAAARGRITFh/9oACAEBAAE/IWkRwqh4I0Nn/9oADAMBAAIAAwAAABCfD//EABYRAQEBAAAAAAAAAAAAAAAAAAARUf/aAAgBAwEBPxBMP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QH//EAB0QAAIBBAMAAAAAAAAAAAAAAAERACExQZFRYaH/2gAIAQEAAT8Qu0CeFCOfMfWiOQDw4CIJmsI6rU//2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;img&quot;
+        title=&quot;img&quot;
+        src=&quot;/static/c5eb0893efa2d5906b4545549f4f3aa2/828fb/db_connection_settings.jpg&quot;
+        srcset=&quot;/static/c5eb0893efa2d5906b4545549f4f3aa2/ff44c/db_connection_settings.jpg 158w,
+/static/c5eb0893efa2d5906b4545549f4f3aa2/a6688/db_connection_settings.jpg 315w,
+/static/c5eb0893efa2d5906b4545549f4f3aa2/828fb/db_connection_settings.jpg 630w,
+/static/c5eb0893efa2d5906b4545549f4f3aa2/0ede0/db_connection_settings.jpg 945w,
+/static/c5eb0893efa2d5906b4545549f4f3aa2/0c20b/db_connection_settings.jpg 992w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;接続が成功すると、左側にテーブルなどが表示されるカラムなどが用意されている操作画面に切り替わる。&lt;/br&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/fab3785ba5fe20d31230a3156ead53ff/4e5ca/db_connection_succeed.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 62.65822784810127%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAABy1EUf//EABcQAAMBAAAAAAAAAAAAAAAAAAABETH/2gAIAQEAAQUCrKys1Qh//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFRABAQAAAAAAAAAAAAAAAAAAIDH/2gAIAQEABj8Cq//EABcQAQEBAQAAAAAAAAAAAAAAAABhcUH/2gAIAQEAAT8hCizs22//2gAMAwEAAgADAAAAECMP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAHBABAAICAwEAAAAAAAAAAAAAAQAhETFhgdHw/9oACAEBAAE/EMJaeic2B6cBGhegmvifGJ//2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;img&quot;
+        title=&quot;img&quot;
+        src=&quot;/static/fab3785ba5fe20d31230a3156ead53ff/828fb/db_connection_succeed.jpg&quot;
+        srcset=&quot;/static/fab3785ba5fe20d31230a3156ead53ff/ff44c/db_connection_succeed.jpg 158w,
+/static/fab3785ba5fe20d31230a3156ead53ff/a6688/db_connection_succeed.jpg 315w,
+/static/fab3785ba5fe20d31230a3156ead53ff/828fb/db_connection_succeed.jpg 630w,
+/static/fab3785ba5fe20d31230a3156ead53ff/0ede0/db_connection_succeed.jpg 945w,
+/static/fab3785ba5fe20d31230a3156ead53ff/4e5ca/db_connection_succeed.jpg 1079w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+画面左上の[SQL]ボタンをクリックすると、SQL エディタが開くのでクエリを書きまくる。&lt;/br&gt;&lt;/p&gt;
+&lt;h2&gt;所感&lt;/h2&gt;
+&lt;p&gt;簡単なクエリを投げただけだが、いつも使っている SQL クライアントとの操作感に大きな差はなく快適。&lt;/br&gt;
+これで CLI で頑張ることと db フォルダ配下を覗きにいく必要がなくなり、キャッチアップが捗りそう。&lt;/br&gt;&lt;/p&gt;
+&lt;h2&gt;参考&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/66515630/how-to-connect-a-postgresql-with-dbeaver-21-0-0&quot;&gt;how to connect a postgresql with dbeaver (21.0.0)?&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ng newするとkarma-jasmine-html-reporterのインストールに失敗する]]></title><description><![CDATA[Angular After Tutorialを始めようと思い、ng new したらエラーになった。 jasmine-core、karma-jasmine-html-reporter 辺りの依存関係が解決できないようだ。
 解消するために何をしたかメモ。 結論 node…]]></description><link>https://keensyo.github.io/angular-error/</link><guid isPermaLink="false">https://keensyo.github.io/angular-error/</guid><pubDate>Sat, 17 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://zenn.dev/lacolaco/books/angular-after-tutorial&quot;&gt;Angular After Tutorial&lt;/a&gt;を始めようと思い、ng new したらエラーになった。&lt;/br&gt;&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; ERR&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt; ERESOLVE unable to resolve dependency tree
 &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; ERR&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;
