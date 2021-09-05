@@ -1,4 +1,36 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[What I Thought]]></title><description><![CDATA[@keensyoのブログです。]]></description><link>https://keensyo.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 09 Aug 2021 15:33:47 GMT</lastBuildDate><item><title><![CDATA[DBeaverでRailsのローカルDBを接続する]]></title><description><![CDATA[はじめに 友人の Rails プロジェクトに参加させてもらえることになり、あれこれキャッチアップしているのだが、DB の状況がよくわからないという課題が出てきた。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[What I Thought]]></title><description><![CDATA[@keensyoのブログです。]]></description><link>https://keensyo.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 05 Sep 2021 04:19:31 GMT</lastBuildDate><item><title><![CDATA[最近のこと]]></title><description><![CDATA[個人開発について 友人のプロジェクトに混ぜてもらっている。
+React…]]></description><link>https://keensyo.github.io/the-latest-activities/</link><guid isPermaLink="false">https://keensyo.github.io/the-latest-activities/</guid><pubDate>Sun, 05 Sep 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;個人開発について&lt;/h2&gt;
+&lt;p&gt;友人のプロジェクトに混ぜてもらっている。&lt;/br&gt;
+React の改修で土地勘がほぼないのと、自身がヘッポコなことから、全然価値発揮できていない。&lt;/br&gt;
+雰囲気でやっているのが原因で、きちんとインプットしないといけないけど、イチからやっていると更に時間がかかりすぎるジレンマ。&lt;/br&gt;
+一段落したらちゃんとやっていくかという気持ち。&lt;/br&gt;
+これ以外だと、rui さんの C コンパイラ作成に手を出した。&lt;/br&gt;
+もっと仕事につながるようなことをやったほうがいいとは思っているけど、どうしても低レイヤ方面への興味が尽きずやってしまっている&lt;/br&gt;
+前に kindle で買った「ふつうのコンパイラをつくろう」も並行して読み進めている。&lt;/br&gt;&lt;/p&gt;
+&lt;h2&gt;仕事について&lt;/h2&gt;
+&lt;p&gt;引き続き開発業務。&lt;/br&gt;
+モブプログラミングで進めていて、やり方自体は慣れてきた。&lt;/br&gt;
+課題なのは、思っていたほどコーディングできていないこと。&lt;/br&gt;
+チケットの性質上、どうしても調査が大きく、いざプログラムを書くかとなると数行の修正など…&lt;/br&gt;
+また、モブプロでありがたいことにドライバーの時間を増やしてもらっているのだが、&lt;/br&gt;
+どうしても自分で試行錯誤するような時間ではなく、集合知で最適なパスを通っているので、&lt;/br&gt;
+やったわりには身についているのかどうかわかりづらい（復習はしているけど）。&lt;/br&gt;
+あと、けっこう要件定義に時間を取られている感覚もあり、そういう意味でも開発の地力を高められているのか不安がある。&lt;/br&gt;&lt;/p&gt;
+&lt;h2&gt;プライベートについて&lt;/h2&gt;
+&lt;p&gt;生活リズムが 8 月から固定されてきており、これはいい面。&lt;/br&gt;
+一方で、自分の時間を取りにくくなったのは事実としてある。&lt;/br&gt;
+そこまでマイナスには捉えていないが、キャリア的な焦りや悩みは大きくなった。&lt;/br&gt;
+こういったことのカジュアルな相談をしたい気持ちと、結局は自分のマネジメント力のようなもの次第という気持ちがせめぎあい、後者に軍配が上がりつつある。&lt;/br&gt;
+自覚はあるけど相談することが苦手だなと最近よく感じる。&lt;/br&gt;&lt;/p&gt;
+&lt;h2&gt;その他&lt;/h2&gt;
+&lt;p&gt;キャリア的な話につながってくるのだが、領域を絞らず分散してエネルギーを使っているのがよくないなと。&lt;/br&gt;
+例えば、仕事で使っている技術を個人開発でも磨き、早く成果を出せるようになったほうがいいよなぁなど。&lt;/br&gt;
+ロクに大したプログラムも書けないのに、低レイヤとか手を出すのは悪手なのか？など。&lt;/br&gt;
+開発以外だとマーケティングへの興味が再燃して、本を少し読んでいるが、この時間も別なことに使ったほうがいい気がする。&lt;/br&gt;
+ただこうやって、自分の興味を削いでいくと、後には何も残らなくなってしまう（精神的に）ことへの恐れもあり、いくら時間があっても足りない感覚になる。&lt;/br&gt;
+足りないのは時間ではなく、集中することを決めきる覚悟なのだが、自分ではにっちもさっちもいかなくなってきているので、詰み気味。&lt;/br&gt;
+ちょっとカフェに行って考えるか、といったこともいまはやりにくく、ついでにコロナもとどまるところを知らず。&lt;/br&gt;
+停滞してるなぁという 9 月初旬。&lt;/br&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[DBeaverでRailsのローカルDBを接続する]]></title><description><![CDATA[はじめに 友人の Rails プロジェクトに参加させてもらえることになり、あれこれキャッチアップしているのだが、DB の状況がよくわからないという課題が出てきた。
 ActiveRecord なので、ターミナルで rails c…]]></description><link>https://keensyo.github.io/dbeaver-set-up/</link><guid isPermaLink="false">https://keensyo.github.io/dbeaver-set-up/</guid><pubDate>Mon, 09 Aug 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;はじめに&lt;/h2&gt;
 &lt;p&gt;友人の Rails プロジェクトに参加させてもらえることになり、あれこれキャッチアップしているのだが、DB の状況がよくわからないという課題が出てきた。&lt;/br&gt;
 ActiveRecord なので、ターミナルで rails c すれば一発でテーブルを参照できる。&lt;/br&gt;
