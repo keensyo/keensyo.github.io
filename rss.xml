@@ -1,4 +1,56 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[What I Thought]]></title><description><![CDATA[@keensyoのブログです。]]></description><link>https://keensyo.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 05 Sep 2021 04:19:31 GMT</lastBuildDate><item><title><![CDATA[最近のこと]]></title><description><![CDATA[個人開発について 友人のプロジェクトに混ぜてもらっている。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[What I Thought]]></title><description><![CDATA[@keensyoのブログです。]]></description><link>https://keensyo.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 27 Sep 2021 01:16:45 GMT</lastBuildDate><item><title><![CDATA[nvmでインストールしたNode.jsに同梱されるnpmのバージョンを変更したい]]></title><description><![CDATA[と思ったのだけれど、できなかった。
+結局再度 nvm で node.js をインストールしなおして解消した。
+何を試したか整理しておく。 ことのはじまり 修正が入った React プロジェクトのローカルサーバーを起動しようとしたところ、以下と似たエラーが起きた。
+Error…]]></description><link>https://keensyo.github.io/not-understand-nvm/</link><guid isPermaLink="false">https://keensyo.github.io/not-understand-nvm/</guid><pubDate>Fri, 24 Sep 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;と思ったのだけれど、できなかった。&lt;/br&gt;
+結局再度 nvm で node.js をインストールしなおして解消した。
+何を試したか整理しておく。&lt;/br&gt;&lt;/p&gt;
+&lt;h2&gt;ことのはじまり&lt;/h2&gt;
+&lt;p&gt;修正が入った React プロジェクトのローカルサーバーを起動しようとしたところ、以下と似たエラーが起きた。&lt;/br&gt;
+&lt;a href=&quot;https://stackoverflow.com/questions/64529958/error-when-trying-to-install-react-redux-dependency&quot;&gt;Error when trying to install react-redux dependency&lt;/a&gt;
+npm のバージョンが 7 以降だからうまくいってないんじゃないか？ということだったので、手元の npm のバージョンを確認してみた。&lt;/br&gt;
+すると、インストールして使っている node とそれに推奨されている npm とでバージョンに差異があり、かつ npm が 7 系ということがわかった。&lt;/br&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;xxx:/Users/xxx &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; version
+&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  npm: &lt;span class=&quot;token string&quot;&gt;&apos;7.24.0&apos;&lt;/span&gt;,
+  node: &lt;span class=&quot;token string&quot;&gt;&apos;14.17.6&apos;&lt;/span&gt;,
+  v8: &lt;span class=&quot;token string&quot;&gt;&apos;8.4.371.23-node.76&apos;&lt;/span&gt;,
+  uv: &lt;span class=&quot;token string&quot;&gt;&apos;1.41.0&apos;&lt;/span&gt;,
+  zlib: &lt;span class=&quot;token string&quot;&gt;&apos;1.2.11&apos;&lt;/span&gt;,
+  brotli: &lt;span class=&quot;token string&quot;&gt;&apos;1.0.9&apos;&lt;/span&gt;,
+  ares: &lt;span class=&quot;token string&quot;&gt;&apos;1.17.2&apos;&lt;/span&gt;,
+  modules: &lt;span class=&quot;token string&quot;&gt;&apos;83&apos;&lt;/span&gt;,
+  nghttp2: &lt;span class=&quot;token string&quot;&gt;&apos;1.42.0&apos;&lt;/span&gt;,
+  napi: &lt;span class=&quot;token string&quot;&gt;&apos;8&apos;&lt;/span&gt;,
+  llhttp: &lt;span class=&quot;token string&quot;&gt;&apos;2.1.3&apos;&lt;/span&gt;,
+  openssl: &lt;span class=&quot;token string&quot;&gt;&apos;1.1.1l&apos;&lt;/span&gt;,
+  cldr: &lt;span class=&quot;token string&quot;&gt;&apos;39.0&apos;&lt;/span&gt;,
+  icu: &lt;span class=&quot;token string&quot;&gt;&apos;69.1&apos;&lt;/span&gt;,
+  tz: &lt;span class=&quot;token string&quot;&gt;&apos;2021a&apos;&lt;/span&gt;,
+  unicode: &lt;span class=&quot;token string&quot;&gt;&apos;13.0&apos;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;本来、node.js が 14.17.6 に対し、npm は 6.14.15 が同梱される。&lt;/br&gt;
+ので、6.14.15 にバージョンを下げたい。&lt;/br&gt;&lt;/p&gt;
+&lt;h3&gt;nvm のコマンドを調べる&lt;/h3&gt;
+&lt;p&gt;nvm —あで nvm のコマンドがわかるので、確認した。&lt;/br&gt;
+見たところ、install コマンドやそのオプションなど、あまり複雑なことはできないようだった。&lt;/br&gt;
+nvm version で出力されるのは 14.17.6。&lt;/br&gt;
+nvm list だと、14.16.1 と 14.17.1 が入っていたので、あまり意味は無さそうと思いながら nvm uninstall [version]で 14.17.6 以外を削除。&lt;/br&gt;&lt;/p&gt;
+&lt;h3&gt;npm のコマンドを調べる&lt;/h3&gt;
+&lt;p&gt;nvm がダメなら npm はどうだろう、ということで npm help でコマンドを確認。&lt;/br&gt;
+こっちも install や状態確認などのコマンドが多く、ほしいコマンドを見つけられなかった。&lt;/br&gt;
+7 系が入っているので、とりあえず 6 系を入れようと npm install npm@6.14.15を実行した。&lt;/br&gt;
+ついでに 7 系の uninstall も実行。&lt;/br&gt;&lt;/p&gt;
+&lt;h3&gt;nvm で再インストール&lt;/h3&gt;
+&lt;p&gt;結構ググってみたが、そもそもこういった事象の人はあまりいない？ようで、&lt;/br&gt;
+npm ないし nvm 経由でインストールする方法を解説する記事にたどり着くだけだった。&lt;/br&gt;
+お手上げになってしまったので、nvm で再インストールを実施した。&lt;/br&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;nvm use system  &lt;span class=&quot;token comment&quot;&gt;#いま使っている14.17.6をuninstallするため&lt;/span&gt;
+nvm uninstall &lt;span class=&quot;token number&quot;&gt;14.17&lt;/span&gt;.6
+nvm &lt;span class=&quot;token function&quot;&gt;ls&lt;/span&gt;  &lt;span class=&quot;token comment&quot;&gt;#きちんとuninstallできているか確認&lt;/span&gt;
+nvm &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; --lts
+nvm use &lt;span class=&quot;token number&quot;&gt;14.17&lt;/span&gt;.6&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;おわりに&lt;/h3&gt;
+&lt;p&gt;本当に npm そのものの切り替えはできないのか、知見がほしい…&lt;/p&gt;</content:encoded></item><item><title><![CDATA[最近のこと]]></title><description><![CDATA[個人開発について 友人のプロジェクトに混ぜてもらっている。
 React…]]></description><link>https://keensyo.github.io/the-latest-activities/</link><guid isPermaLink="false">https://keensyo.github.io/the-latest-activities/</guid><pubDate>Sun, 05 Sep 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;個人開発について&lt;/h2&gt;
 &lt;p&gt;友人のプロジェクトに混ぜてもらっている。&lt;/br&gt;
 React の改修で土地勘がほぼないのと、自身がヘッポコなことから、全然価値発揮できていない。&lt;/br&gt;
