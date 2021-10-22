@@ -1,4 +1,55 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[What I Thought]]></title><description><![CDATA[@keensyoのブログです。]]></description><link>https://keensyo.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 27 Sep 2021 01:16:45 GMT</lastBuildDate><item><title><![CDATA[nvmでインストールしたNode.jsに同梱されるnpmのバージョンを変更したい]]></title><description><![CDATA[と思ったのだけれど、できなかった。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[What I Thought]]></title><description><![CDATA[@keensyoのブログです。]]></description><link>https://keensyo.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 22 Oct 2021 16:27:41 GMT</lastBuildDate><item><title><![CDATA[職業プログラマーになって半年の振り返り]]></title><description><![CDATA[2021 年 5 月にソフトウェアエンジニアのロールになった。
+まだギリギリ…]]></description><link>https://keensyo.github.io/review-the-first-half-of-2021/</link><guid isPermaLink="false">https://keensyo.github.io/review-the-first-half-of-2021/</guid><pubDate>Wed, 20 Oct 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;2021 年 5 月にソフトウェアエンジニアのロールになった。&lt;/br&gt;
+まだギリギリ 6 ヶ月は経っていないけど、この半年がどうだったかを振り返る。&lt;/br&gt;&lt;/p&gt;
+&lt;h3&gt;やったこと（全体編）&lt;/h3&gt;
+&lt;p&gt;業務システムを継続改善するチームで、バグから要望まで、フロントエンドからバックエンドまで一通り開発した。&lt;/br&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;要望を要件に落とし込む&lt;/li&gt;
+&lt;li&gt;設計方針を議論し実装する&lt;/li&gt;
+&lt;li&gt;テストを書く&lt;/li&gt;
+&lt;li&gt;手動でテストをやる&lt;/li&gt;
+&lt;li&gt;設計書を修正する&lt;/li&gt;
+&lt;li&gt;すべて OK になったらリリースチームにブランチをマージしてもらう&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ごくごく普通のことをやっていたと思う。&lt;/br&gt;
+少し特殊だったのが、ひとつの課題（チケット）をチームメンバー全員で取り組むこと。&lt;/br&gt;
+具体的な進め方としてモブプログラミング（リモート）を導入し、実践してきたことだった。&lt;/br&gt;
+結果的に、このやり方はいまのところうまくいっている。&lt;/br&gt;
+リリース頻度は下がっておらず、ローカルルールにひとりでハマることはほぼ無くなった。&lt;/br&gt;
+その課題について一番よくわかっているのが自分だけでなく、他のメンバーも同じくらいよく知っているという状況は、精神的にも負荷が軽い。&lt;/br&gt;&lt;/p&gt;
+&lt;h3&gt;やったこと（個人編）&lt;/h3&gt;
+&lt;p&gt;仕事的には上記の通りで、これらをやるために個人として何をやったかを振り返る。&lt;/br&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;C#のキャッチアップ&lt;/li&gt;
+&lt;li&gt;Angular、RxJS のキャッチアップ&lt;/li&gt;
+&lt;li&gt;JavaScript、TypeScript のキャッチアップ&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;とにかく勉強してました、という半年だった。&lt;/br&gt;
+とくにフロントエンドは知っておかないといけないことが幅広く、いまも結構苦労している。&lt;/br&gt;
+C#は正直なところ、仕事以外で触れるモチベーションが湧かず、フロントエンドの大変さにかまかけて最近はあまりやれていない。&lt;/br&gt;
+C#は&lt;a href=&quot;https://amzn.to/3jjNyKQ&quot;&gt;本&lt;/a&gt;で一通り総ざらいし、あとは&lt;a href=&quot;https://ufcpp.net/study/csharp/&quot;&gt;ブログ&lt;/a&gt;にもお世話になった。&lt;/br&gt;
+Angular は&lt;a href=&quot;https://angular.jp/tutorial&quot;&gt;公式チュートリアル&lt;/a&gt;、あとは&lt;a href=&quot;https://www.udemy.com/course/angular-ja/&quot;&gt;Udemy&lt;/a&gt;を会社で受けられたのでこの前完走した。&lt;/br&gt;
+&lt;a href=&quot;https://qiita.com/seteen/items/43908e33e08a39612a07&quot;&gt;この記事&lt;/a&gt;も教えてもらったので、Firebase でのデプロイ前ぐらいまでは手を動かした。&lt;/br&gt;
+RxJS はいろいろな記事を読んだけど、どれも今の自分には難しく感じた。&lt;/br&gt;
+&lt;a href=&quot;https://tech.recruit-mp.co.jp/front-end/rxjs-intro/&quot;&gt;このシリーズ&lt;/a&gt;は体系的で、サンプルコードも充実していてよかった。&lt;/br&gt;
+あとは&lt;a href=&quot;https://qiita.com/agajo/items/7942743a0130f7a0f30b&quot;&gt;基礎中の基礎&lt;/a&gt;も勉強になった。&lt;/br&gt;
+&lt;a href=&quot;https://qiita.com/Sekky0905/items/93bd4804a2003ed0aa8d&quot;&gt;同じような記事&lt;/a&gt;もあり、こっちも比較的わかりやすかった。&lt;/br&gt;
+結局のところ、JavaScript の非同期処理とは？ということを&lt;a href=&quot;https://jsprimer.net/&quot;&gt;JSPrimer&lt;/a&gt;で勉強したのが効いた気がする。&lt;/br&gt;
+JavaScript は JSPrimer と&lt;a href=&quot;https://developer.mozilla.org/ja/docs/Learn/Getting_started_with_the_web&quot;&gt;MDN&lt;/a&gt;が素晴らしく、いまも助けられている。&lt;/br&gt;
+TypeScript は&lt;a href=&quot;https://book.yyts.org&quot;&gt;サバイバル TypeScript&lt;/a&gt;、&lt;a href=&quot;https://future-architect.github.io/typescript-guide/index.html&quot;&gt;仕事ですぐに使える TypeScript&lt;/a&gt;あたりを使って勉強した。&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;全体的にキャッチアップ中ではあるんだけど、やろうと思えば一生キャッチアップできるのでそろそろこの単語を使うのはやめようと思う。&lt;/br&gt;&lt;/p&gt;
+&lt;h3&gt;見直したい点&lt;/h3&gt;
+&lt;p&gt;おおむね良かったとは思っている。あまり自由な時間を取りづらくても最大限努力できたと思う。&lt;/br&gt;
+一方で、半年前の想定と比べて試行錯誤して設計しコードを書くことが大きく減っていることに危機感を抱いている。&lt;/br&gt;
+原因はモブプログラミングと対応チケットの性質と捉えている。&lt;/br&gt;
+前者は、試行錯誤というプロセスを無くしてしまった。&lt;/br&gt;
+本来ならば初学者は、ある程度苦しみながら設計を考えどうやってコードで表現するのか、に一番時間を使わなくてはならない。&lt;/br&gt;
+それが、モブプログラミングだと集合知となるのでゴールに辿り着きやすく、加えてコードを書くことは順番制なので手で覚えることが難しくなっている。&lt;/br&gt;
+チーム視点でみると、成果は出ているので問題ないものの個人の地力はその限りではないと感じるのが大きな課題であり不安要素である。&lt;/br&gt;
+対応チケットの性質は、工数が大きすぎない（目安として 1 人月）ものでありその結果、単発の改修やバグ対応になる。&lt;/br&gt;
+そのため、難易度もすごい高いわけでなく、ほとんどは改修のみとなるため、イチから経験するということは叶えにくい。&lt;/br&gt;&lt;/p&gt;
+&lt;h3&gt;まとめ&lt;/h3&gt;
+&lt;p&gt;とにかく前進あるのみで、チャンスを掴めるときは掴みに行くことを考えたい。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[nvmでインストールしたNode.jsに同梱されるnpmのバージョンを変更したい]]></title><description><![CDATA[と思ったのだけれど、できなかった。
 結局再度 nvm で node.js をインストールしなおして解消した。
 何を試したか整理しておく。 ことのはじまり 修正が入った React プロジェクトのローカルサーバーを起動しようとしたところ、以下と似たエラーが起きた。
 Error…]]></description><link>https://keensyo.github.io/not-understand-nvm/</link><guid isPermaLink="false">https://keensyo.github.io/not-understand-nvm/</guid><pubDate>Fri, 24 Sep 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;と思ったのだけれど、できなかった。&lt;/br&gt;
