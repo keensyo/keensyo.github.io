@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[What I Thought]]></title><description><![CDATA[@keensyoのブログです。]]></description><link>https://keensyo.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 06 Dec 2021 01:10:18 GMT</lastBuildDate><item><title><![CDATA[肌の乾燥]]></title><description><![CDATA[ここ 1,2 年で肌の乾燥が気になるようになってきた。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[What I Thought]]></title><description><![CDATA[@keensyoのブログです。]]></description><link>https://keensyo.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 08 Dec 2021 00:40:57 GMT</lastBuildDate><item><title><![CDATA[基礎がわからない]]></title><description><![CDATA[プログラミングを仕事にしようと思って、エンジニアのポジションに異動したが、なぜか最近は全然プログラムを書いていない。
+リリースはしているのでもちろん修正は入っているが、一行修正などが続いていてたぶん…]]></description><link>https://keensyo.github.io/diary2/</link><guid isPermaLink="false">https://keensyo.github.io/diary2/</guid><pubDate>Wed, 08 Dec 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;プログラミングを仕事にしようと思って、エンジニアのポジションに異動したが、なぜか最近は全然プログラムを書いていない。&lt;/br&gt;
+リリースはしているのでもちろん修正は入っているが、一行修正などが続いていてたぶん 1 ヶ月ぐらいはまともにコードを書いていない。&lt;/br&gt;
+これはよくないという気持ちと、もっと書きたい（試行錯誤したい）という気持ちが強くなり、膨大なネタがある競技プログラミングがいいんじゃないか？と思って手を付け始めた。&lt;/br&gt;
+やっているのは、競プロ定番の&lt;a href=&quot;https://atcoder.jp/&quot;&gt;AtCoder&lt;/a&gt;。&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;コンテストに出るのではなく、&lt;a href=&quot;https://atcoder.jp/contests/abs&quot;&gt;AtCoder Beginners Selection&lt;/a&gt;という、まずはここからというコンテンツをやっている。&lt;/br&gt;
+解説は（C++だけど）けんちょんさんの&lt;a href=&quot;https://qiita.com/drken/items/fd4e5e3630d0f5859067&quot;&gt;Qiita&lt;/a&gt;にあり、どうにか進められる感じ。&lt;/br&gt;ん m，。・？&lt;/p&gt;
+&lt;p&gt;実際にやってみるとけっこう面白く、ハマる人がいるのも頷ける。&lt;/br&gt;
+クイズ的な面白さで、高校までの勉強で求められていたものに通ずるものがあるなと思った。&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;あと、自分は全然プログラミングができないということがよくわかる。&lt;/br&gt;
+アルゴリズムや解き方のセオリーを知らないというのはともかく、問題を分解して解けるサイズにし、やり方を調べコードに落とし込むという一連の流れがこなせない。&lt;/br&gt;
+とくに問題の分解が苦手で、これはつまりタスク分解が苦手ということで、あれ？そもそも仕事ができない…？となっておりつらい気持ちになった。&lt;/br&gt;
+どうやって克服するか？は、丁寧に理解を進めていくしかないのかなと現時点では思っている。&lt;/br&gt;
+つまずきをそのままにしないというか、あいまいなところをなくすというか。&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;振り返るとこれはいままで生きてきてずっと抱えている課題だなと。&lt;/br&gt;
+いままでは時間を投下し、パターンを脳に染み込ませ徐々にわかるようにしてきた。&lt;/br&gt;
+これは理解といえたのか、本当にわかっていたのか、こういったことを会社に入って以来ずっと薄く悩んでいた。&lt;/br&gt;
+手っ取り早くできることは、基礎を見つめ直しわかるようになることで、はやる気持ちを抑えなくてはいけない。&lt;/br&gt;
+何かがうまくいっていないときは、たいてい基礎がおろそかになっている。これは経験則。&lt;/br&gt;
+しかし、はたして基礎とはなにか？どこまでやるか？&lt;/br&gt;
+ここでも問題を分解して解けるサイズにすることが求めらている。&lt;/br&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[肌の乾燥]]></title><description><![CDATA[ここ 1,2 年で肌の乾燥が気になるようになってきた。
 まず、手が荒れる。
 これは以前と比べて皿洗いをよくするようになったから、というもっともらしい理由はあるが、それにしても目立つ。
 次にフリース素材のパジャマが着れない。
