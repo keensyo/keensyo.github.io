@@ -1,27 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[What I Thought]]></title><description><![CDATA[@keensyoのブログです。]]></description><link>https://keensyo.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 05 Jun 2022 17:02:45 GMT</lastBuildDate><item><title><![CDATA[with コロナ after コロナ]]></title><description><![CDATA[いまこれを書いているのが 2022 年 5 月で、世間が新型コロナウイルスを認識し警戒を始めた時から丸 2 年が経った。
-この 2 年間、振り返るとこれまでの生活が大きく変わった。
-大袈裟にいえば、破壊されたと言っても過言ではないと思う。…]]></description><link>https://keensyo.github.io/about-covid19-2022/</link><guid isPermaLink="false">https://keensyo.github.io/about-covid19-2022/</guid><pubDate>Fri, 27 May 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;いまこれを書いているのが 2022 年 5 月で、世間が新型コロナウイルスを認識し警戒を始めた時から丸 2 年が経った。&lt;/br&gt;
-この 2 年間、振り返るとこれまでの生活が大きく変わった。&lt;/br&gt;
-大袈裟にいえば、破壊されたと言っても過言ではないと思う。&lt;/br&gt;&lt;/p&gt;
-&lt;p&gt;2 年経ってどうなのか？という話でいうと、&lt;/br&gt;
-&lt;a href=&quot;https://stopcovid19.metro.tokyo.lg.jp/cards/number-of-confirmed-cases&quot;&gt;東京都の新規陽性者数&lt;/a&gt;は下降トレンドに見える。&lt;/br&gt;
-また、&lt;a href=&quot;https://stopcovid19.metro.tokyo.lg.jp/cards/medical-care-summary&quot;&gt;重症者数&lt;/a&gt;もかなり少なくなった。&lt;/br&gt;
-これはひとえにワクチン接種が進んだこと（東京都の 2 回目率は 76%以上）が、大きな要因と思われる。&lt;/br&gt;
-ただ、2 回目接種がまだ十分に進んでいない頃に急に新規陽性者の数がガクンと減ったことがあり、そのときの報道では「正直なぜ減っているのかわからない」といった内容だったと記憶している。&lt;/br&gt;
-ここでワクチンの有効性を喧伝できれば接種も進むだろうに、世の中ままならないなぁと思った。&lt;/br&gt;&lt;/p&gt;
-&lt;p&gt;さて、2022 年 5 月時点では新型コロナウイルスに対する治療薬は発明されていない。&lt;/br&gt;
-そして最近では、後遺症についてチラホラと聞くようになった。&lt;/br&gt;
-後遺症もなかなか厄介なものが多いらしく、これについても現状は治療薬などが無い認識だ。&lt;/br&gt;&lt;/p&gt;
-&lt;p&gt;こういった状況で、世の中では「with コロナ」に向けた動きが始まっている。&lt;/br&gt;
-マスク着用ルールや海外入出国時のルールなど、いろいろと制限が緩和され始めている。&lt;/br&gt;
-この動きは嬉しいが、戸惑いも正直ある。&lt;/br&gt;
-なんというか、コロナに対する感度が麻痺し、まだ油断してはいけない状況なのに大丈夫かなという。&lt;/br&gt;
-おそらくどこかのタイミングでかかってしまうことは避けられず、そうなった時に対処法がないのが引っかかる。&lt;/br&gt;
-かといって、だんだんと緩和していく流れの中で取り残されていくことも嫌だし、何よりずっと引きこもっていることは現実的ではない。&lt;/br&gt;
-2 年前の生活に急に戻れと言われても、それも対応できる気がしない。&lt;/br&gt;&lt;/p&gt;
-&lt;p&gt;after コロナは果たしてどんな世界なのか。&lt;/br&gt;
-というか、本当にそんな時が来るのだろうか。&lt;/br&gt;
-今のところはあまり想像ができない。&lt;/br&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[with コロナ after コロナ]]></title><description><![CDATA[いまこれを書いているのが 2022 年 5 月で、世間が新型コロナウイルスを認識し警戒を始めた時から丸 2 年が経った。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[What I Thought]]></title><description><![CDATA[@keensyoのブログです。]]></description><link>https://keensyo.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 05 Jun 2022 17:03:08 GMT</lastBuildDate><item><title><![CDATA[with コロナ after コロナ]]></title><description><![CDATA[いまこれを書いているのが 2022 年 5 月で、世間が新型コロナウイルスを認識し警戒を始めた時から丸 2 年が経った。
 この 2 年間、振り返るとこれまでの生活が大きく変わった。
 大袈裟にいえば、破壊されたと言っても過言ではないと思う。…]]></description><link>https://keensyo.github.io/covid19-2022/</link><guid isPermaLink="false">https://keensyo.github.io/covid19-2022/</guid><pubDate>Fri, 27 May 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;いまこれを書いているのが 2022 年 5 月で、世間が新型コロナウイルスを認識し警戒を始めた時から丸 2 年が経った。&lt;/br&gt;
 この 2 年間、振り返るとこれまでの生活が大きく変わった。&lt;/br&gt;
