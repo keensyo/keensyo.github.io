@@ -1,4 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[What I Thought]]></title><description><![CDATA[@keensyoのブログです。]]></description><link>https://keensyo.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 03 Sep 2022 15:55:18 GMT</lastBuildDate><item><title><![CDATA[JavaScriptの論理否定（!）と二重否定（!!）]]></title><description><![CDATA[プロジェクトのコードで、以下のような表現を見かけた。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[What I Thought]]></title><description><![CDATA[@keensyoのブログです。]]></description><link>https://keensyo.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 05 Sep 2022 13:11:50 GMT</lastBuildDate><item><title><![CDATA[にわかな物欲の正体]]></title><description><![CDATA[…]]></description><link>https://keensyo.github.io/retirement/</link><guid isPermaLink="false">https://keensyo.github.io/retirement/</guid><pubDate>Mon, 05 Sep 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;最近、車や広めの家が欲しい気持ちがなんとなく湧いてきている。&lt;/br&gt;
+町行く車を見てはアレがいいなと思ったり、エンジニアが家を買うブログは話題になればすぐ読んだりしている。&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;これまでこういった物欲らしい物欲に縁が無かったため、ようやく人並みになったかなと思っていたのだが、実はこれはもしかしたら物欲じゃないのかもしれない。&lt;/br&gt;
+というのも、これらを買うための具体的な行動をするわけではなく、「ちょっと面白そうかも」ぐらいの感覚に近い。&lt;/br&gt;
+おもちゃじゃないんだから何言ってるんだ？という感じだが、この表現が今のところ一番しっくりきている。&lt;/br&gt;
+突き詰めると普段日常で刺激が無いのと家や車が欲しいというよりは、家や車を持てるぐらいの経済的・精神的余裕が欲しいということに収斂するように思う。&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;この 2 つは今すぐにどうにかなるものでもない。&lt;/br&gt;
+刺激は日々の工夫でどうにかなるかもしれないが、すぐに飽きてしまいそうだし何より工夫を毎日の生活にサクッと組み込めるほどの余裕はない。&lt;/br&gt;
+経済的・精神的余裕なんてものはそれこそン億円の宝くじを当てて、友人などともほどよく交流があり、かつ時間の制約が極めて少ない生活（つまり独身的自由）でないと埋め合わせることができない類の話かなと、直感的に思っている。&lt;/br&gt;
+つまり空想であり妄想であり、他力本願な話なのである。&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;たぶん現状で家も車も、その他欲しいもの（新型 Macbook Pro）を手に入れたとしてもあまり感動が無いかもしれない。&lt;/br&gt;
+無いよりはいいけど。&lt;/br&gt;
+でもいま一番欲しいものは、何も気にしなくていいたっぷりの時間と仕事をしなくても生活に十分なお金、自然かもしれない。&lt;/br&gt;
+もっと自然に触れ、美味しい空気を吸っていればもう少しマシになるんじゃないかな。&lt;/br&gt;
+抱えているほとんどのストレスはこれで解決しそう。&lt;/br&gt;
+9 月の連休はお金と時間は諦めるので自然はどうにか享受したい。&lt;/br&gt;
+自然を感じに不自然にそこへ向かう都会の悲しい現実の一つがここに。&lt;/br&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[JavaScriptの論理否定（!）と二重否定（!!）]]></title><description><![CDATA[プロジェクトのコードで、以下のような表現を見かけた。
 なお、記事タイトルは JavaScript と書いたが、実際に見かけたのは TypeSctipt だったためサンプルコードは TypeScript で書く。 普通の getter…]]></description><link>https://keensyo.github.io/javascript-logical-not-double-not/</link><guid isPermaLink="false">https://keensyo.github.io/javascript-logical-not-double-not/</guid><pubDate>Sun, 04 Sep 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;プロジェクトのコードで、以下のような表現を見かけた。&lt;/br&gt;
 なお、記事タイトルは JavaScript と書いたが、実際に見かけたのは TypeSctipt だったためサンプルコードは TypeScript で書く。&lt;/br&gt;&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;typescript&quot;&gt;&lt;pre class=&quot;language-typescript&quot;&gt;&lt;code class=&quot;language-typescript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;fooStatus&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
