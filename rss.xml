@@ -1,4 +1,56 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[What I Thought]]></title><description><![CDATA[@keensyoのブログです。]]></description><link>https://keensyo.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 18 Dec 2022 06:43:27 GMT</lastBuildDate><item><title><![CDATA[MacBook Pro 2018を使っている]]></title><description><![CDATA[Apple Silicon が発表され、世間が沸いてから暫く経つ。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[What I Thought]]></title><description><![CDATA[@keensyoのブログです。]]></description><link>https://keensyo.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 10 Jan 2023 14:58:08 GMT</lastBuildDate><item><title><![CDATA[2022年]]></title><description><![CDATA[筆が遅くなって 2023 年になってしまった。あけましておめでとうございます。
+2022 年もいろいろあったと思うので、簡単に振り返り。 転職した 別のエントリでも書いたけど転職をした。初めての転職。
+現時点で転職から半年が経つ。つまり 202…]]></description><link>https://keensyo.github.io/look-bac-2022/</link><guid isPermaLink="false">https://keensyo.github.io/look-bac-2022/</guid><pubDate>Sun, 08 Jan 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;筆が遅くなって 2023 年になってしまった。あけましておめでとうございます。&lt;/br&gt;
+2022 年もいろいろあったと思うので、簡単に振り返り。&lt;/br&gt;&lt;/p&gt;
+&lt;h3&gt;転職した&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;content/blog/jobchange/index.md&quot;&gt;別のエントリ&lt;/a&gt;でも書いたけど転職をした。初めての転職。&lt;/br&gt;
+現時点で転職から半年が経つ。つまり 2022 年の半分はいまの職場で過ごしていることになる。&lt;/br&gt;
+半年いるが目立った成果はなく、強いて言えば生き残ったぐらい。&lt;/br&gt;
+いまのプロジェクトが初めての仕事になるが、5 月までは継続らしいのでその頃にまた振り返りができればと思う。&lt;/br&gt;
+（この振り返りを書く頃には転職して 1 年になる…時の流れの早さよ…）&lt;/br&gt;&lt;/p&gt;
+&lt;h3&gt;子供が 2 歳になった&lt;/h3&gt;
+&lt;p&gt;元気にイヤイヤ期に突入している。&lt;/br&gt;
+もっぱら困っているのが、お風呂 → 寝かしつけをするのが僕でないとダメになってしまったこと。&lt;/br&gt;
+物理的に僕がいなければ、ギャン泣きしまくった末に寝てくれるらしい。&lt;/br&gt;
+が、最近はなぜか夜中に目を覚ますことが増えてしまい、起きると妻をスルーして僕がいるところまで来てしまうことが困りごと。&lt;/br&gt;
+一緒に寝てくれることは幸せだけど、僕しかできないことがあると不本意ながら仕事が忙しくなってしまった時に立ち行かなくなるのが怖い。&lt;/br&gt;
+どうやら、夕方などから僕が家にいなければあまり問題無いらしいので、矯正するために家を追いやられる可能性が出てきた。&lt;/br&gt;
+2023 年上半期は、どちらでも寝かしつけできるようになりたい。&lt;/br&gt;&lt;/p&gt;
+&lt;h3&gt;プログラミング&lt;/h3&gt;
+&lt;p&gt;転職してからは仕事で TypeScript を書いている。&lt;/br&gt;
+プライベートで時間があると、何度目かわからない Go 入門をしていた。&lt;/br&gt;
+Go に関しては&lt;a href=&quot;https://www.oreilly.co.jp/books/9784814400041/&quot;&gt;本も買った&lt;/a&gt;けれど、通して読めていない。&lt;/br&gt;
+良い言語だなという感覚はあるのだけれど、いまいち手に馴染まない。&lt;/br&gt;
+もう少し頑張ると開ける気がするので、2023 年は根気強く向き合いたい。&lt;/br&gt;
+というか、あまり時間がないので TypeScript に向き合った方が絶対に良いんだけれど、一日中同じ言語に取り組むのが結構苦痛。&lt;/br&gt;
+仕事をしている感覚になり、精神衛生上良くない。同じ理由で Vue もあまり深掘りできていない。&lt;/br&gt;
+とはいえ Vue に関してはもっと基礎を固めないとまずいので、ドキュメントと関連資料を眺めることはやっていきたいと思っている。&lt;/br&gt;
+一年を通じてで言えば、ずっと仕事で使う技術をキャッチアップしていたら終わっていた感じ。&lt;/br&gt;
+で、こんなことを言っているそばから、コーディングクイズ熱が上がってきたので C++に手を付けている。&lt;/br&gt;
+我ながらヤクの毛刈りが上手いなと思う。&lt;/br&gt;&lt;/p&gt;
+&lt;h3&gt;読書&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://rebuild.fm/350/&quot;&gt;Rebuild&lt;/a&gt;で今年どれだけ本読んだ？という話題があり、良い機会なので思い出す。&lt;/br&gt;
+たぶん 14 冊。記憶が曖昧なので 1,2 冊は違うかもしれない。&lt;/br&gt;
+あと、読みかけの本を読了したのも含めているので純粋に 1 冊カウントしていいのか、技術書は含んでいいのか（といっても 2 冊…）、などはあるけど 10 は超えてそう。&lt;/br&gt;
+意外に読んでいるなという感想。月 1 冊弱なら今どき読んでいるほうな気がする。&lt;/br&gt;
+でももっと読みたいなぁ。積読しまくっている本があり過ぎて、向こう 2 年ぐらいは困らないはずなんだけど、気になるのがあるとつい買ってしまう。&lt;/br&gt;
+読む時間を買わないといけないのに。&lt;/br&gt;&lt;/p&gt;
+&lt;h3&gt;遊び&lt;/h3&gt;
+&lt;p&gt;2022 年は、だいぶ世の中のコロナに対する扱いが変わってきたなと感じた。&lt;/br&gt;
+特にそこそこの規模のオフラインイベントを開催したり、以前よりも飲みに誘いやすくなったり、と明らかに潮目が変わった感じがある。&lt;/br&gt;
+それでも家族以外とはあまり遊びには出かけなかった。&lt;/br&gt;
+ここは反省点なんだけど、連絡不精に拍車がかかっており、一週間先の予定などを考える、それを見越して声をかけておくなどの行動が全然取れなくなっている。&lt;/br&gt;
+そうすると、必然遊ぶ頻度も下がり、どんどん友人の輪が狭くなっているのを感じる。&lt;/br&gt;
+2023 年こそはもっと遊びたい。ようやく育児もリズムが安定してきたので、家を空けるハードルもだいぶ下がった。&lt;/br&gt;
+徐々に取り戻していきたいなと思う。&lt;/br&gt;&lt;/p&gt;
+&lt;h3&gt;趣味その他&lt;/h3&gt;
+&lt;p&gt;映画はあまり観れなかった。それでも、「恋する惑星」を見に行けたのは良かった。&lt;/br&gt;
+ずっと観たかったので映画館で上映する情報を手に入れられてラッキーだった。言うまでもなく面白かった。&lt;/br&gt;
+旅行は福岡に行った。久々に何も考えずに気の向くままの旅ができて最高だった。&lt;/br&gt;
+銭湯は定期的に行けた。寝かしつけ後にサクッと行く、というのができることがわかり良いリフレッシュになった。&lt;/br&gt;
+最近は寒くて全然行けていない。風呂には入りたいが、行き帰りが寒すぎるので躊躇する。&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;大病や大怪我をすることなく、2022 年を終えられてよかった。&lt;/br&gt;
+2023 年はより視野を広げながら楽しんでいけたらいいな。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[MacBook Pro 2018を使っている]]></title><description><![CDATA[Apple Silicon が発表され、世間が沸いてから暫く経つ。
 当然僕も欲しくて、何度も Apple Store…]]></description><link>https://keensyo.github.io/not-need-new-laptop/</link><guid isPermaLink="false">https://keensyo.github.io/not-need-new-laptop/</guid><pubDate>Sun, 18 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Apple Silicon が発表され、世間が沸いてから暫く経つ。&lt;/br&gt;
 当然僕も欲しくて、何度も Apple Store アプリを覗いていた。&lt;/br&gt;
 ただ、何度考えても、積極的に買う理由が無く、購入を見送ってきた。&lt;/br&gt;
